@@ -7,6 +7,32 @@ export default function Home() {
   return (
     <div>
       {/* <Navbar/> */}
+      <div id="carouselIndicators" class="carousel slide carousel-home" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./images/carousel1.jpg" class="d-block w-100" alt="image-1" style={{ marginTop: '0px' }} />
+          </div>
+          <div class="carousel-item active">
+            <img src="./images/carousel2.jpg" class="d-block w-100" alt="image-2" style={{ marginTop: '0px' }} />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel3.jpg" class="d-block w-100" alt="image-3" style={{marginTop: '0px'}} />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <div class="Our_AIM">
         <div class="section-heading text-center d-flex align-items-center justify-content-around py-3">
           <div class="line"></div>
