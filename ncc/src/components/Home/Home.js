@@ -15,13 +15,13 @@ export default function Home() {
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img src="./images/carousel1.jpg" class="d-block w-100" alt="image-1" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel1.jpg" class="d-block w-100" alt="image-1" style={{ marginTop: '0px' }} />
           </div>
           <div class="carousel-item active">
-            <img src="./images/carousel2.jpg" class="d-block w-100" alt="image-2" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel2.jpg" class="d-block w-100" alt="image-2" style={{ marginTop: '0px' }} />
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel3.jpg" class="d-block w-100" alt="image-3" style={{marginTop: '0px'}} />
+            <img src="./images/home/carousel3.jpg" class="d-block w-100" alt="image-3" style={{ marginTop: '0px' }} />
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -40,7 +40,7 @@ export default function Home() {
           <div class="line"></div>
         </div>
         <div class="flex-container">
-          <img class="pics" src="./images/Aim.jpg" alt="Flag" style={{ position: 'relative' }} />
+          <img class="pics" src="./images/home/Aim.jpg" alt="Flag" style={{ position: 'relative' }} />
           <div class="text" style={{ fontWeight: 400 }}>
             <p>The Aims of the NCC laid out in 1988 have stood the test of time and continue to meet the
               requirements expected of it in the current socio-economic scenario of the country.
@@ -67,7 +67,7 @@ export default function Home() {
           <div class="line"></div>
         </div>
         <div class="flex-container">
-          <img class="pics" src="./images/Pledge.png" alt="Pledge" style={{ position: 'relative' }} />
+          <img class="pics" src="./images/home/Pledge.png" alt="Pledge" style={{ position: 'relative' }} />
           <div class="text">
             <p>We the cadets of the National Cadet Corps, do solemnly pledge that we shall always uphold the unity
               of India. We resolve to be disciplined and responsible citizens of our nation. We shall undertake
