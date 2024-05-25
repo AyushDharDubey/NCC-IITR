@@ -189,8 +189,9 @@
     .card {
         width: 80%;
     }
-
-
+.carousel-nav{
+    display: none;
+}
 }
 
 @media only screen and (max-width: 360px) {
