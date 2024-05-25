@@ -1,38 +1,68 @@
-.App {
+body {
+  background-color: #F3F9FF;
+}
+
+.ncc-bg-copyright {
+  background-color: #363131;
+}
+
+.ncc-white {
+  color: #FFFDFD
+}
+
+.ncc-black {
+  color: black
+}
+
+.ncc-bg-blue {
+  background-color: rgb(33, 36, 135, 0.95);
+}
+
+.ncc-navBar {
+  width: 100%;
+}
+
+.underline-white {
+  border-bottom: 2px solid white;
+}
+
+.heading {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line {
+  background-color: #053d4d;
+  width: 30%;
+  height: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1024px) {
+  .heading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .line {
+    width: 25%;
+    height: 3px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 760px) {
+  .heading {
+    margin-bottom: 36px;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .line {
+    width: 20%;
+    height: 4px;
   }
 }
