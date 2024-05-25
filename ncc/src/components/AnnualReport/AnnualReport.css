@@ -1,15 +1,5 @@
-.heading {
-    text-transform: uppercase;
-    /*  add margin-top 82px */
-    margin: 130px 0 48px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-}
-
-.reports .curr-year, .card-container {
+.reports .curr-year,
+.card-container {
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -87,7 +77,7 @@
         flex-shrink: 0;
         /* max-height: 250px; */
         padding-right: 15px;
-        margin:0px;
+        margin: 0px;
         box-sizing: border-box;
     }
 
@@ -189,9 +179,10 @@
     .card {
         width: 80%;
     }
-.reports .carousel-nav{
-    display: none;
-}
+
+    .reports .carousel-nav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 360px) {
