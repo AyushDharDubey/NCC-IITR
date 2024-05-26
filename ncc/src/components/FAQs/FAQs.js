@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './FAQs.css';
 
-// import Navbar from "../Navbar/navbar.js"
-
 export default function AnnualReport() {
+    useEffect(() => {
+        document.title = 'FAQs – NCC';
+    }, []);
+    
     return (
         <div class="container mb-5">
             <p class="heading">How can we help you?</p>

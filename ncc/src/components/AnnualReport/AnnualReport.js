@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
 import './AnnualReport.css';
 
-// import Navbar from "../Navbar/navbar.js"
-
 export default function AnnualReport() {
 
     useEffect(() => {
+        document.title = 'Annual Report – NCC';
 
         const prev = document.querySelector('.prev');
         const next = document.querySelector('.next');
@@ -57,6 +56,24 @@ export default function AnnualReport() {
                     <div class="carousel-container">
                         <div class="carousel-inner">
                             <div class="track">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div className="img">
+                                            <a href="https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing" target="_blank">
+                                                <img src="./images/annualreport/annlrp2020.jpg" alt="annual report 19-20" style={{ width: '100%', borderRadius: '10px' }} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div className="img">
+                                            <a href="https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing" target="_blank">
+                                                <img src="./images/annualreport/annlrp2021.jpg" alt="annual report 20-21" style={{ width: '100%', borderRadius: '10px' }} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="card-container">
                                     <div class="card">
                                         <div className="img">

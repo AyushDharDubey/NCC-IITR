@@ -1,34 +1,32 @@
 import React from 'react'
 import './Home.css';
 
-// import Navbar from "../Navbar/navbar.js"
-
 export default function Home() {
   return (
-    <div>
+    <>
       {/* <Navbar/> */}
-      <div id="carouselIndicators" class="carousel slide carousel-home" data-bs-ride="carousel">
+      <div id="homeCarousel" class="carousel slide carousel-home" data-bs-ride="carousel" >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img src="./images/home/carousel1.jpg" class="d-block w-100" alt="image-1" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel1.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
           </div>
           <div class="carousel-item active">
-            <img src="./images/home/carousel2.jpg" class="d-block w-100" alt="image-2" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel2.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
           </div>
           <div class="carousel-item">
-            <img src="./images/home/carousel3.jpg" class="d-block w-100" alt="image-3" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel3.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
           </div>
         </div>
-        <button class="carousel-control-prev" data-bs-target="#carouselIndicators" type="button" data-bs-slide="prev">
+        <button class="carousel-control-prev" data-bs-target="#homeCarousel" type="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" data-bs-target="#carouselIndicators" type="button" data-bs-slide="next">
+        <button class="carousel-control-next" data-bs-target="#homeCarousel" type="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -101,6 +99,6 @@ export default function Home() {
           <p style={{ marginRight: '55px', paddingBottom: '30px' }}>Source: <a href="http://indiancc.nic.in/ncc-song-lyrics/">indiancc.nic.in/ncc-song-lyrics/</a></p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
