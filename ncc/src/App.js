@@ -7,6 +7,7 @@ import FAQs from "./components/FAQs/FAQs.js";
 import AnnualReport from "./components/AnnualReport/AnnualReport.js";
 import Events from "./components/Events/Events.js";
 // import Navbar from "./components/Navbar/Navbar.js";
+import Footer from "./components/Footer/footer.js"
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route exact={true} path='/events' element={<Events />} />
         </Routes>
         {/* <Footer /> */}
+        <Routes>
+          <Route exact={true} path='/' element={<Footer />} />
+        </Routes>
       </Router>
     </div>
   );
