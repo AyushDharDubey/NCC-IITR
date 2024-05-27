@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+#title_footer {
+  font-size: 1.2rem;
+  border-bottom: 2px solid;
+  padding-right: 1.5em;
+}
+span#title_footer {
+  width: fit-content;
+}
+div#title_footer > div {
+  font-weight: 600;
+}
+
+.element {
+  max-width: fit-content;
+}
+a#content {
+  text-decoration: none;
+  color: #fffdfd;
+}
+.address {
+  width: 12em;
+}
+.footerResponsive{
+    width: 100%;
+}
+.footerResponsive1 {
+  display: none !important;
+  width: 100%;
+}
+.pt-1{
+    justify-content: space-around;
+}
+a#logo1:hover > img {
+  border-radius: 50%;
+  background: rgb(0, 89, 255);
+}
+a#logo2:hover > img {
+  border-radius: 50%;
+  background: red;
+}
+a#logo3:hover > img {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 50%;
+}
+a#logo4:hover > img {
+  background-image: conic-gradient(#4285f4 0deg, #34a852 150deg, #fabb04 225deg, #ea4335 280deg, #1a73e8 350deg);
+  border-radius: 50%;
+}
+.footer-copyright {
+  margin-bottom: 0px;
+}
+.fitContent {
+  width: fit-content;
+}
+#contact_content,
+#address_content,
+#website_content {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.contact_content_0,
+.address_content_0,
+.website_content_0 {
+  height: 114px !important;
+}
+#footer_heading > h2 {
+  font-weight: 700 !important;
+  font-size: 1.8em;
+  margin-bottom: 0.2rem;
+}
+#footer_heading > h4 {
+  font-weight: 600 !important;
+  font-size: 1.5em;
+}
+.navLinks {
+  padding: 0;
+}
+
+.social{
+    gap: 1vmin;
+}
+
+@media (max-width: 760px) {
+  .footerResponsive {
+    display: none !important;
+  }
+  .footerResponsive1 {
+    display: flex !important;
+  }
+
+  .element {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  #footer_heading > h2 {
+    font-size: 1.4em;
+  }
+  #footer_heading {
+    padding: 0.5rem !important;
+  }
+}
