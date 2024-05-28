@@ -68,15 +68,15 @@
     .carousel-container .track {
         width: 100%;
         display: inline-flex;
-        gap: 1%;
+        /* gap: 1%; */
         transition: transform 0.5s;
     }
 
     .carousel-container .card-container {
-        width:24%;
+        width:25%;
         flex-shrink: 0;
         /* max-height: 250px; */
-        padding-right: 15px;
+        padding-right: 1rem;
         margin: 0px;
         box-sizing: border-box;
     }
