@@ -1,15 +1,5 @@
-.heading {
-    text-transform: uppercase;
-    /*  add margin-top 82px */
-    margin: 130px 0 48px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-}
-
-.reports .curr-year, .card-container {
+.reports .curr-year,
+.card-container {
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -64,34 +54,34 @@
         width: 75%;
     }
 
-    .carousel-container {
+    .reports .carousel-container {
         width: 100%;
         margin: 50px auto;
         min-height: 200px;
         position: relative;
     }
 
-    .carousel-container .carousel-inner {
+    .reports .carousel-container .reports .carousel-inner {
         overflow: hidden;
     }
 
     .carousel-container .track {
         width: 100%;
         display: inline-flex;
-        gap: 1%;
+        /* gap: 1%; */
         transition: transform 0.5s;
     }
 
     .carousel-container .card-container {
-        width: 23%;
+        width:25%;
         flex-shrink: 0;
         /* max-height: 250px; */
-        padding-right: 15px;
-        margin:0px;
+        padding-right: 1rem;
+        margin: 0px;
         box-sizing: border-box;
     }
 
-    .carousel-container .card-container .card {
+    .reports .carousel-container .card-container .card {
         width: 100%;
         max-height: 110%;
         border: 1px solid #ccc;
@@ -101,7 +91,7 @@
         flex-direction: column;
     }
 
-    .carousel-nav button {
+    .reports .carousel-nav button {
         border: 0;
         background-color: #f3f9ff;
         position: absolute;
@@ -110,24 +100,24 @@
         cursor: pointer;
     }
 
-    .carousel-nav button i {
+    .reports .carousel-nav button i {
         font-size: 30px;
     }
 
-    .carousel-nav .prev {
+    .reports .carousel-nav .prev {
         left: -40px;
         display: none;
     }
 
-    .carousel-nav .prev.show {
+    .reports .carousel-nav .prev.show {
         display: block;
     }
 
-    .carousel-nav .next {
+    .reports .carousel-nav .next {
         right: -40px;
     }
 
-    .carousel-nav .next.hide {
+    .reports .carousel-nav .next.hide {
         display: none;
     }
 
@@ -166,7 +156,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .carousel-nav button {
+    .reports .carousel-nav button {
         top: 35%;
     }
 }
@@ -189,9 +179,10 @@
     .card {
         width: 80%;
     }
-.carousel-nav{
-    display: none;
-}
+
+    .reports .carousel-nav {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 360px) {

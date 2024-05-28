@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './footer.css';
+import './Footer.css';
 
 
 const Footer = ({ id }) => {
@@ -200,7 +200,7 @@ const Footer = ({ id }) => {
 
     </div>
     <p class="d-flex align-items-center text-center justify-content-center ncc-bg-copyright footer-copyright ncc-16 ncc-white py-2" id="content">©
-      Copyright 2021 - NCC IIT Roorkee | All Right Reserved
+      Copyright 2024 - NCC IIT Roorkee | All Right Reserved
     </p>
   </div>);
 };
