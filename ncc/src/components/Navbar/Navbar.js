@@ -1,7 +1,81 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import "./Navbar.css"
+import Home from '../Home/Home.js';
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
+    const [isShrunk, setIsShrunk] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 100) {
+          setIsShrunk(true);
+        } else {
+          setIsShrunk(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
     return (
-        <div></div>
+        <div>
+            <div class="container-fluid navBar">
+                <div class="row ncc-navBar">
+                    <div class="NCC-Logo">
+                        <Link href="/">
+                            <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo" className={isShrunk ? 'ncc_shrink' : ''} ></img>
+                        </Link>
+                    </div>
+                    <div class="col-10" id="navbar_NavLinks" className= {` col-10 ${isShrunk ? 'navbar_shrink' : ''}`}>
+                        <div class="pt-3 navItem" id="ncc-heading">
+                            <p class="heading-ncc-hn">नेशनल कैडेट कोर</p>
+                            <p class="heading-ncc-en">National Cadet Corps, IIT Roorkee</p>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-dark navLinks py-0 box">
+                            <div class="container p-0 m-0">
+                                <div class="navbar-collapse">
+                                    <ul class="navbar-nav d-flex justify-content-between w-100 me-auto mb-lg-0">
+                                        <li class="nav-item">
+                                            <Link class="nav-link active" aria-current="page" to ="/">Home</Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link class="nav-link" to ="/about-us">About</Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link class="nav-link" to ="/events">Events</Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link class="nav-link" to ="./allBlog.html">Blogs</Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link class="nav-link" to ="/faqs">FAQs</Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link class="nav-link" to ="/annual-report">Annual Reports</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="IITR-Logo">
+                        <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo" className={isShrunk ? 'iitr_shrink' : ''}></img></a>
+                    </div>
+                    <div class="toggle-icon d-none navItem">
+                        <button class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-box ">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
