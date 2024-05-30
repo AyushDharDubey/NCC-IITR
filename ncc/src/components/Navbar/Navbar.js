@@ -23,6 +23,14 @@ export default function Navbar() {
         };
     }, []);
 
+    const [isActive, setIsActive] = useState(false);
+
+    // Event handler to toggle class
+    const handleClick = () => {
+        setIsActive(!isActive); 
+        console.log(isActive);  // This will toggle the class on click
+    };
+
     return (
         <><div>
             <div class="container-fluid navBar">
@@ -79,8 +87,32 @@ export default function Navbar() {
                     <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
                 </div>
                 <div id="hamburger">
-                    <img id='ham-icon' src="./images/navbar/bars.svg"></img>
+                    <img id='ham-icon' src="./images/navbar/bars.svg" onClick={handleClick}></img>
                 </div>
+            </div>
+            {/* Hamburger Menu bar*/}
+            <div id="Menu" className={isActive ? '' : 'd-none'}
+                >
+                <ul>
+                    <li>
+                        <Link aria-current="page" to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about-us">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/events">Events</Link>
+                    </li>
+                    <li>
+                        <Link to="./allBlog.html">Blogs</Link>
+                    </li>
+                    <li>
+                        <Link to="/faqs">FAQs</Link>
+                    </li>
+                    <li>
+                        <Link to="/annual-report">Annual Reports</Link>
+                    </li>
+                </ul>
             </div>
         </>
     );
