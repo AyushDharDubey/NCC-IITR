@@ -27,8 +27,7 @@ export default function Navbar() {
 
     // Event handler to toggle class
     const handleClick = () => {
-        setIsActive(!isActive); 
-        console.log(isActive);  // This will toggle the class on click
+        setIsActive(!isActive);   // This will toggle the class on click
     };
 
     return (
@@ -91,8 +90,8 @@ export default function Navbar() {
                 </div>
             </div>
             {/* Hamburger Menu bar*/}
-            <div id="Menu" className={isActive ? '' : 'd-none'}
-                >
+            <div id="Menu" className={isActive ? '' : 'd-none'}>
+                <div><img src='./images/close.png' onClick={handleClick}></img></div>
                 <ul>
                     <li>
                         <Link aria-current="page" to="/">Home</Link>
