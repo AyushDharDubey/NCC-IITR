@@ -40,6 +40,16 @@ body {
   height: 4px;
 }
 
+.App{
+  margin-top:161.5px;
+}
+
+@media only screen and (max-width: 470px) {
+  .App {
+      margin-top: 76px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .heading {
     font-size: 35px;
@@ -64,4 +74,7 @@ body {
     width: 20%;
     height: 4px;
   }
+  .App {
+    margin-top: 97px;
+}
 }
