@@ -9,21 +9,26 @@ export default function Navbar() {
     const [isActive, setIsActive] = useState(false);
    
     useEffect(() => {
-        if (location.pathname === '/'){
-            setIsShrunk(false);
-            window.addEventListener('scroll', handleScroll);
-        } else {
+        if (location.pathname !== '/') {
+            setIsShrunk(true); 
             window.removeEventListener('scroll', handleScroll);
-            setIsShrunk(true);
+        } else{
+            window.addEventListener('scroll', handleScroll); 
         }
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
       }, [location]);
 
 
     const handleScroll = () => {
-        if (window.scrollY > 140) {
-            setIsShrunk(true);
-        } else {
-            setIsShrunk(false);
+        if (location.pathname === '/') {
+            if (window.scrollY > 140) {
+                setIsShrunk(true);
+            } else {
+                setIsShrunk(false);
+            }
         }
     };
 

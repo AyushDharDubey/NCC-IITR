@@ -47,7 +47,7 @@ export default function AnnualReport() {
     const reports = [
         { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
         { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        // { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
         // { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
         // { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
     ];
@@ -58,15 +58,15 @@ export default function AnnualReport() {
             <div class="reports">
                 <div className='curr-year'>
                     <div class="Report-box">
-                        <a href="https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing" target="_blank">
-                            <img src="./images/annualreport/annlrp2021.jpg" alt="annual report 20-21" /></a>
+                        <a href="https://drive.google.com/file/d/1XQC6-aUcZG6igPKWHH0zacx0M0uEPU7l/view?usp=drive_link" target="_blank">
+                            <img src="./images/annualreport/annlrp2023.jpg" alt="annual report 23-24" /></a>
                     </div>
                 </div>
                 <div class="prev-year">
                     {reports.length < 5 ?
                         <div className={`d-flex ${window.innerWidth<750 ? 'flex-column' : ''} justify-content-evenly`}>
-                            {reports.map((report) => (
-                                <div className="card-container">
+                            {reports.map((report, index) => (
+                                <div className="card-container" key={index}>
                                     <div className="card">
                                         <div className="img">
                                             <a href={report.link} target="_blank" rel="noopener noreferrer">
@@ -80,8 +80,8 @@ export default function AnnualReport() {
                         <div class="carousel-container">
                             <div class="carousel-inner">
                                 <div class="track">
-                                    {reports.map((report) => (
-                                        <div className="card-container">
+                                    {reports.map((report, index) => (
+                                        <div className="card-container" key={index}>
                                             <div className="card">
                                                 <div className="img">
                                                     <a href={report.link} target="_blank" rel="noopener noreferrer">
