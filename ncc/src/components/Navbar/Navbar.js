@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css"
-import Home from '../Home/Home.js';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 export default function Navbar() {
+    const location = useLocation();
     const [isShrunk, setIsShrunk] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 140) {
-                setIsShrunk(true);
-            } else {
-                setIsShrunk(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     const [isActive, setIsActive] = useState(false);
+   
+    useEffect(() => {
+        if (location.pathname === '/'){
+            setIsShrunk(false);
+            window.addEventListener('scroll', handleScroll);
+        } else {
+            window.removeEventListener('scroll', handleScroll);
+            setIsShrunk(true);
+        }
+      }, [location]);
+
+
+    const handleScroll = () => {
+        if (window.scrollY > 140) {
+            setIsShrunk(true);
+        } else {
+            setIsShrunk(false);
+        }
+    };
 
     // Event handler to toggle class
     const handleClick = () => {
@@ -58,7 +60,7 @@ export default function Navbar() {
                                             <Link class="nav-link" to="/events">Events</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="./allBlog.html">Blogs</Link>
+                                            <Link class="nav-link" to="/blogs">Blogs</Link>
                                         </li>
                                         <li class="nav-item">
                                             <Link class="nav-link" to="/faqs">FAQs</Link>
@@ -103,7 +105,7 @@ export default function Navbar() {
                         <Link to="/events">Events</Link>
                     </li>
                     <li>
-                        <Link to="./allBlog.html">Blogs</Link>
+                        <Link to="/blogs">Blogs</Link>
                     </li>
                     <li>
                         <Link to="/faqs">FAQs</Link>

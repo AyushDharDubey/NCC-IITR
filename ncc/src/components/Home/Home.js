@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Home.css';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'NCC – IITR';
+}, []);
   return (
     <>
-      {/* <Navbar/> */}
       <div id="homeCarousel" class="carousel slide carousel-home" data-bs-ride="carousel" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
