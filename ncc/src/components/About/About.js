@@ -240,7 +240,7 @@ const AboutUs = () => {
   const renderMemberCards = (members) => {
     return members.map((member) => (
       <div className="member-card" key={member.id || `${member.department}-${member.name}`}> {/* Use ID or combine department-name */}
-        <img src='./member1.jpg' />
+  
         <h3>{member.name}</h3>
         <p>{member.title}</p>
         <p>{member.email}</p>

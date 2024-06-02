@@ -64,15 +64,15 @@ div {
     border-radius: 5px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgb(17, 17, 251);
   }
   
-  .member-card img {
+  /* .member-card img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 5px;
-  }
+  } */
   .content-area {
     align-items: center;
     justify-content: center;
