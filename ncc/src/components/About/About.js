@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./About.css";
-
 const departments = [
   "ADMINISTRATION",
   "DESIGN",
@@ -102,62 +101,221 @@ const memberData = [
     phone: '',
   },
 
-  // Add more member objects for other departments
 ];
 
-const AboutUs = () => {
-  const [activeTab, setActiveTab] = useState('Marketing');
+const years = [
+  "2022-2023",
+  "2021-2022",
+  "2020-2021",
+  "2019-2020",
+]
 
+const yearTm = [
+  {
+    id: 10, //
+    department: '2022-2023',
+    name: 'RISHABH KOSTA',
+    title: 'Joint Secretary',
+    image: 'member1.jpg',
+    email: 'r_kosta@me.iitr.ac.in',
+    phone: '',
+  },
+  {
+    id:1,
+    year: '2022-2023',
+    name:'CHAYAN AILAWALIA',
+    title: 'Joint Secretary, Editorial',
+  },
+  {
+    id:2,
+    year: '2022-2023',
+    name:'RAHUL GOYAL',
+    title: 'Joint Secretary, Web-D',
+  },
+  {
+    id:3,
+    year: '2022-2023',
+    name:'SUHALI KONDAPALLI',
+    title: ' Joint Secretary, Training & Sports',
+  },
+  {
+    id:4,
+    year: '2022-2023',
+    name:'SHRIKANT',
+    title: 'Joint Secretary, Events',
+  },
+
+  {
+    id:0,
+    year: '2021-2022',
+    name:'ABHISHEK KUMAR JHA',
+    title: '',
+  },
+  {
+    id:0,
+    year: '2021-2022',
+    name:'VARUN MISHRA',
+    title: ' Joint Secretary, Editorial',
+  },
+  {
+    id:0,
+    year: '2021-2022',
+    name:'ANUJ KUMAR',
+    title: 'Joint Secretary, Web-D',
+  },
+  {
+    id:0,
+    year: '2021-2022',
+    name:'RAJKUMAR KHICHAR',
+    title: 'Joint Secretary, Training & Sports',
+  },
+  {
+    id:0,
+    year: '2021-2022',
+    name:'PRATHAMESH BHAKTAN',
+    title: 'Joint Secretary, Administration',
+  },
+  {
+    id:0,
+    year: '2021-2022',
+    name:'ANSHIKA BANG',
+    title: 'Joint Secretary, Events',
+  },
+
+  {
+    id:0,
+    year: '2020-2021',
+    name:'DEEPAK YADAV',
+    title: 'General Secretary',
+  },
+  {
+    id:0,
+    year: '2020-2021',
+    name:'SDL MALAVIKA',
+    title: 'Joint Secretary, Administration',
+  },
+  {
+    id:0,
+    year: '2020-2021',
+    name:'NITESH KUMAR',
+    title: 'Joint Secretary, Training & Sports',
+  },
+  {
+    id:0,
+    year: '2020-2021',
+    name:'GEDILA SARITA',
+    title: 'Joint Secretary, Events',
+  },
+  {
+    id:0,
+    year: '2019-2020',
+    name:'LAVKUSH VERMA',
+    title: 'General Secretary',
+  },
+  {
+    id:0,
+    year: '2019-2020',
+    name:'SHIVANI SNIGDHA',
+    title: 'Joint Secretary, Administration',
+  },
+  {
+    id:0,
+    year: '2019-2020',
+    name:'DEEPAK GURJAR',
+    title: ' Joint Secretary, Training & Sports',
+  },
+]
+const AboutUs = () => {
+  const [activeTab, setActiveTab] = useState('ADMINISTRATION');
+  const [activeTab2, setActiveTab2] = useState('2022-2023');
   const handleTabClick = (department) => {
     setActiveTab(department);
   };
 
+  const handleTabClick2 = (department1) => {
+    setActiveTab2(department1);
+  };
+
+
   const renderMemberCards = (members) => {
     return members.map((member) => (
       <div className="member-card" key={member.id || `${member.department}-${member.name}`}> {/* Use ID or combine department-name */}
-        <img src={member.image} />
+        <img src='./member1.jpg' />
         <h3>{member.name}</h3>
         <p>{member.title}</p>
+        <p>{member.email}</p>
+        <p>{member.phone}</p>
       </div>
     ));
   };
 
   return (
     <div className="about-us">
-        <div className='presection'>
-            <p>presection</p>
-        </div>
-        <div className='activities'>
-        <p>activities</p>
-        </div>
-        <div className='officers'>
-            <p>officers</p>
-        </div>
-        <div className='meettheteam'>
-            <h1 className='mttheading'>MEET THE TEAM</h1>
-      <ul className="departments">
-        {departments.map((member) => (
-          <li
-            key={member}
-            className={activeTab === member ? 'active' : ''}
-            onClick={() => handleTabClick(member)}
-          >
-            {member}
-          </li>
-        ))}
-      </ul>
-      <div className="content-area">
-        {departments.map((member) => (
-          <div
-            key={member}
-            className={`department-members ${
-              activeTab === member ? 'active' : ''
-            }`}
-          >
-            {activeTab === member && renderMemberCards(memberData.filter((m) => m.department === activeTab))}
-          </div>
-        ))}
+      <div className='presection'>
+        <p>presection</p>
       </div>
+      <div className='activities'>
+        <p>activities</p>
+      </div>
+      <div className='officers'>
+        <p>officers</p>
+      </div>
+      <div className='meettheteam'>
+        <span className='mttspan'>
+          <h1 className='mttheading'>MEET THE TEAM</h1>
+        </span>
+        <ul className="departments">
+          {departments.map((member) => (
+            <li
+              key={member}
+              className={activeTab === member ? 'active' : ''}
+              onClick={() => handleTabClick(member)}
+            >
+              {member}
+            </li>
+          ))}
+        </ul>
+        <div className="content-area">
+          {departments.map((member) => (
+            <div
+              key={member}
+              className={`department-members ${activeTab === member ? 'active' : ''
+                }`}
+            >
+              {activeTab === member && renderMemberCards(memberData.filter((m) => m.department === activeTab))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Past Members begins */}
+
+      <div className='meettheteam'>
+        <span className='mttspan'>
+          <h1 className='mttheading'>MEET THE TEAM</h1>
+        </span>
+        <ul className="departments">
+          {years.map((member1) => (
+            <li
+              key={member1}
+              className={activeTab2 === member1 ? 'active' : ''}
+              onClick={() => handleTabClick2(member1)}
+            >
+              {member1}
+            </li>
+          ))}
+        </ul>
+        <div className="content-area">
+          {years.map((member1) => (
+            <div
+              key={member1}
+              className={`department-members ${activeTab2 === member1 ? 'active' : ''
+                }`}
+            >
+              {activeTab2 === member1 && renderMemberCards(yearTm.filter((m) => m.year === activeTab2))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -40,8 +40,8 @@ div {
   }
   .mttheading {
     align-self: center;
-  }
-  
+    display: inline;
+}
   .department-members {
     display: none;
     justify-content: center;
@@ -56,7 +56,8 @@ div {
   }
   
   .member-card {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     margin: 2%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -90,3 +91,11 @@ div {
     color: #fff; /* White Text on Active Tab */
   }
   
+  @media only screen and (max-width: 710px) {
+    .departments {
+        flex-direction: column;
+    }
+    .member-card {
+        display: block;
+    }
+    }
