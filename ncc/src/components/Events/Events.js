@@ -1,44 +1,114 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Events.css';
 
 export default function Events() {
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+    const trackRef = useRef(null);
+    const cardContainerRef = useRef(null);
+    const carouselContainerRef = useRef(null);
+
+    const events = [
+        {
+            src: "./images/events/yoga.jpg",
+            alt: "Yoga Event",
+            dataBsTarget: "#exampleModalp9"
+        },
+        {
+            src: "./images/events/bdc.jpeg",
+            alt: "BDC Event",
+            dataBsTarget: "#exampleModalp8"
+        },
+        {
+            src: "./images/events/marathon.jpg",
+            alt: "Marathon Event",
+            dataBsTarget: "#exampleModalp7"
+        },
+        {
+            src: "./images/events/quiz.jpg",
+            alt: "Quiz Event",
+            dataBsTarget: "#exampleModalp6"
+        },
+        {
+            src: "./images/events/hd.png",
+            alt: "HD Event",
+            dataBsTarget: "#exampleModalp5"
+        },
+        {
+            src: "./images/events/Run.jpg",
+            alt: "Run Event",
+            dataBsTarget: "#exampleModalp4"
+        },
+        {
+            src: "./images/events/KVDquiz.png",
+            alt: "KVD Quiz Event",
+            dataBsTarget: "#exampleModalp2"
+        },
+        {
+            src: "./images/events/Pentathlon.png",
+            alt: "Pentathlon Event",
+            dataBsTarget: "#exampleModalp3"
+        },
+        {
+            src: "./images/events/GenSD-Webinar1.jpg",
+            alt: "GenSD Webinar",
+            dataBsTarget: "#exampleModalp1"
+        }
+    ];
+
+
     useEffect(() => {
         document.title = 'Events – NCC';
 
-        const prev = document.querySelector('.prev');
-        const next = document.querySelector('.next');
+        const prev = prevRef.current;
+        const next = nextRef.current;
+        const track = trackRef.current;
+        const cardContainer = cardContainerRef.current;
+        const carouselContainer = carouselContainerRef.current;
+        let cardWidth = cardContainer.offsetWidth;
+        let carouselWidth = carouselContainer.offsetWidth;
 
-        const track = document.querySelector('.track');
-        let cards = document.querySelectorAll('.card-container');
-        let cardWidth = document.querySelector('.card-container').offsetWidth;
 
-        let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+        if (window.innerWidth < 750) {
+            next.classList.add('hide');
+        }
+        const handleResize = () => {
+            cardWidth = cardContainer.offsetWidth;
+            carouselWidth = carouselContainer.offsetWidth;
+        };
 
-        window.addEventListener('resize', () => {
-            cardWidth = document.querySelector('.card-container').offsetWidth;
-            carouselWidth = document.querySelector('.carousel-container').offsetWidth;
-        })
+        window.addEventListener('resize', handleResize);
 
         let index = 0;
 
-        next.addEventListener('click', () => {
+        const handleNext = () => {
             index++;
             prev.classList.add('show');
             track.style.transform = `translateX(-${index * cardWidth}px)`;
 
-            if ((cards.length * cardWidth - ((index) * cardWidth)) < carouselWidth) {
+            if ((events.length * cardWidth - ((index) * cardWidth)) < carouselWidth) {
                 next.classList.add('hide');
             }
-        })
+        };
 
-        prev.addEventListener('click', () => {
+        const handlePrev = () => {
             index--;
             next.classList.remove('hide');
             if (index === 0) {
                 prev.classList.remove('show');
             }
             track.style.transform = `translateX(-${index * cardWidth}px)`;
-        })
+        };
+
+        next.addEventListener('click', handleNext);
+        prev.addEventListener('click', handlePrev);
+
+        return () => {
+            next.removeEventListener('click', handleNext);
+            prev.removeEventListener('click', handlePrev);
+            window.removeEventListener('resize', handleResize);
+        };
+
     }, []);
 
     return (
@@ -127,8 +197,6 @@ export default function Events() {
                                             <p class="event-details">Date - 09-08-2022</p>
                                             <p class="event-details">Venue - IITR Campus</p>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -165,63 +233,23 @@ export default function Events() {
                     <div class="line"></div>
                 </div>
                 <div class="recom">
-                    <div class="carousel-container">
+                    <div className="carousel-container" ref={carouselContainerRef}>
                         <div class="carousel-inner">
-                            <div class="track">
-
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/yoga.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp9" /></div>
+                            <div className="track" ref={trackRef}>
+                                {events.map((event, index) => (
+                                    <div className="card-container" key={index} ref={cardContainerRef}>
+                                        <div className="card">
+                                            <div class="img"><img src={event.src} alt="" data-bs-toggle="modal" data-bs-target={event.dataBsTarget} /></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/bdc.jpeg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp8" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/marathon.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp7" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/quiz.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp6" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/hd.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp5" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/Run.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp4" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/KVDquiz.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp2" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/Pentathlon.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp3" /></div>
-                                    </div>
-                                </div>
-                                <div class="card-container">
-                                    <div class="card">
-                                        <div class="img"><img src="./images/events/GenSD-Webinar1.jpg" alt="" data-bs-toggle="modal" data-bs-target="#exampleModalp1" /></div>
-                                    </div>
-                                </div>
-
+                                ))}
                             </div>
                         </div>
                         <div class="nav">
-                            <button class="prev">
+                            <button className="prev" ref={prevRef}>
                                 <i class="fa fa-chevron-left"></i>
                             </button>
-                            <button class="next show">
+                            <button className="next show" ref={nextRef}>
                                 <i class="fa fa-chevron-right"></i>
                             </button>
                         </div>

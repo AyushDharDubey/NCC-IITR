@@ -101,7 +101,7 @@ nav {
     padding-bottom: 1.5px;
 }
 
-.navLinks li a:active {
+.navLinks li a.active {
     border-bottom: white 2.5px solid;
     padding-bottom: 1.5px;
 }
