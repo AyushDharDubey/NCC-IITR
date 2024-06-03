@@ -9,17 +9,17 @@ export default function Navbar() {
     const [isActive, setIsActive] = useState(false);
    
     useEffect(() => {
-        if (location.pathname !== '/') {
+        if (location.pathname === '/') {
+            handleScroll();
+            window.addEventListener('scroll', handleScroll);
+        } else {
             setIsShrunk(true); 
-            window.removeEventListener('scroll', handleScroll);
-        } else{
-            window.addEventListener('scroll', handleScroll); 
         }
     
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-      }, [location]);
+    }, [location.pathname]);
 
 
     const handleScroll = () => {
@@ -56,22 +56,22 @@ export default function Navbar() {
                                 <div class="navbar-collapse">
                                     <ul class="navbar-nav d-flex justify-content-between w-100 me-auto mb-lg-0">
                                         <li class="nav-item">
-                                            <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                                            <Link class={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="/about-us">About</Link>
+                                            <Link class={`nav-link ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">About</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="/events">Events</Link>
+                                            <Link class={`nav-link ${location.pathname === '/events' ? 'active' : ''}`} to="/events">Events</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="/blogs">Blogs</Link>
+                                            <Link class={`nav-link ${location.pathname === '/blogs' ? 'active' : ''}`} to="/blogs">Blogs</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="/faqs">FAQs</Link>
+                                            <Link class={`nav-link ${location.pathname === '/faqs' ? 'active' : ''}`} to="/faqs">FAQs</Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link class="nav-link" to="/annual-report">Annual Reports</Link>
+                                            <Link class={`nav-link ${location.pathname === '/annual-report' ? 'active' : ''}`} to="/annual-report">Annual Reports</Link>
                                         </li>
                                     </ul>
                                 </div>
