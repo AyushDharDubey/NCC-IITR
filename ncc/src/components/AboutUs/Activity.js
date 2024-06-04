@@ -39,7 +39,7 @@ function Activity() {
               </div>
             </div>
             <div class="carousel-item">
-              <div class="activity d-flex flex-row-reverse justify-content-between align-items-center">
+              <div class="activity d-flex justify-content-between align-items-center">
                 <img src="./images/aboutus/camp.jpg" style={{ borderRadius: '10px' }} />
                 <div class="activity-content">
                   <h4 class="activity-heading py-2">Camp</h4>
@@ -93,7 +93,7 @@ function Activity() {
               </div>
             </div>
             <div class="carousel-item">
-              <div class="activity d-flex flex-row-reverse justify-content-between align-items-center">
+              <div class="activity d-flex justify-content-between align-items-center">
                 <img src="./images/aboutus/cultural.jpg" style={{ borderRadius: '10px' }} />
                 <div class="activity-content">
                   <h4 class="activity-heading py-2">Cultural</h4>

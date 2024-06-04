@@ -35,7 +35,7 @@
 }
 
 .activity-content {
-  width: 78%;
+  width: 80%;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
 }
@@ -154,11 +154,6 @@
     display: none;
   }
 
-  #activityCarousel .carousel-item {
-    max-height: 560px;
-    overflow: auto;
-  }
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   #activityCarousel .carousel-item::-webkit-scrollbar {
     display: none;
@@ -174,6 +169,7 @@
 
   .activity {
     background-color: transparent;
+    flex-direction: column;
   }
 
   .activity-content {
@@ -182,8 +178,7 @@
   }
 
   .activity>img {
-    width: 250px !important;
-    height: 150px !important;
+    width:70%;
     margin-bottom: 1rem;
   }
 
