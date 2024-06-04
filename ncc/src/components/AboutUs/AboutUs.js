@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.css';
+import './AboutUs.css';
 
 
 
-const About = () => {
+export default function AboutUs() {
   return (
     <>
 
@@ -88,7 +88,4 @@ const About = () => {
     </div>
     </>
   );
-};
-
-export default About;
-
+}
