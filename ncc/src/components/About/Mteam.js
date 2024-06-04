@@ -250,15 +250,6 @@ function Mteam() {
   };
   return (
     <div className="about-us">
-      <div className='presection'>
-        <p>presection</p>
-      </div>
-      <div className='activities'>
-        <p>activities</p>
-      </div>
-      <div className='officers'>
-        <p>officers</p>
-      </div>
       <div className='meettheteam'>
         <span className='mttspan'>
           <h1 className='mttheading'>MEET THE TEAM</h1>
