@@ -28,7 +28,6 @@ body {
 
 .heading {
   text-align: center;
-  text-transform: uppercase;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 0em;
@@ -39,6 +38,16 @@ body {
   background-color: #053d4d;
   width: 30%;
   height: 4px;
+}
+
+.App{
+  margin-top:161.5px;
+}
+
+@media only screen and (max-width: 470px) {
+  .App {
+      margin-top: 76px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -65,4 +74,7 @@ body {
     width: 20%;
     height: 4px;
   }
+  .App {
+    margin-top: 97px;
+}
 }

@@ -1,27 +1,32 @@
 // import logo from './logo.svg';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css';
+// import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./components/Home/Home.js";
 import About from './components/About/About.js';
 // import AboutUs from "./components/AboutUs/AboutUs.js";
-// import FAQs from "./components/FAQs/FAQs.js";
 import AnnualReport from "./components/AnnualReport/AnnualReport.js";
-// import Events from "./components/Events/Events.js";
-// import Navbar from "./components/Navbar/Navbar.js";
+import FAQs from "./components/FAQs/FAQs.js";
+import Events from "./components/Events/Events.js";
+import Footer from "./components/Footer/Footer.js";
+import Navbar from './components/Navbar/Navbar.js';
+import About from './components/About/About.js';
+
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route exact={true} path='/' element={<Home />} />
           <Route exact={true} path='/about-us' element={<About />} />
           <Route exact={true} path='/annual-report' element={<AnnualReport />} />
-          {/* <Route exact={true} path='/faqs' element={<FAQs />} /> */}
-          {/* <Route exact={true} path='/events' element={<Events />} /> */}
+          <Route exact={true} path='/faqs' element={<FAQs />} />
+          <Route exact={true} path='/events' element={<Events />} />
+          <Route exact={true} path='/about-us' element={<About />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
