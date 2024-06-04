@@ -1,3 +1,104 @@
+/* AboutUs.css */
+div {
+    align-items: center;
+    text-align: center;
+}
+.about-us {
+    margin: 0 auto;
+    align-items: center;
+    align-content: baseline;
+    justify-content: center;
+    background-color: #f5f5f5;
+    align-self: center;
+    border-radius: 5px;
+  }
+  
+  .departments {
+    overflow-x: scroll;
+    display: flex;
+    list-style: none;
+    align-items: center     ;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .departments li {
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .departments li.active {
+    background-color: #e0e0e0;
+    border-bottom: none;
+    transition-duration: 1s;
+  }
+  
+  .content-area {
+    padding: 20px;
+  }
+  .mttheading {
+    align-self: center;
+    display: inline;
+}
+  .department-members {
+    display: none;
+    justify-content: center;
+  }
+  
+  .department-members.active {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    display: block;
+  }
+  
+  .member-card {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(17, 17, 251);
+  }
+  
+  /* .member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  } */
+  .content-area {
+    align-items: center;
+    justify-content: center;
+  }
+  /* NCC Specific Styles */
+  .about-us h2 {
+    text-align: center;
+    color: #007bff; /* NCC Blue */
+  }
+  
+  .departments li {
+    color: #007bff; /* NCC Blue */
+  }
+  
+  .departments li.active {
+    color: #fff; /* White Text on Active Tab */
+  }
+  
+  @media only screen and (max-width: 710px) {
+    .departments {
+        flex-direction: column;
+    }
+    .member-card {
+        display: block;
+    }
+    }
 .about-heading {
     font-weight: bold;
     text-align: center;
@@ -517,4 +618,3 @@
     margin-right: auto;
   }
 
- 

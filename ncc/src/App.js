@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact={true} path='/' element={<Home />} />
-          {/* <Route exact={true} path='/about-us' element={<AboutUs />} /> */}
+          <Route exact={true} path='/about-us' element={<About />} />
           <Route exact={true} path='/annual-report' element={<AnnualReport />} />
           <Route exact={true} path='/faqs' element={<FAQs />} />
           <Route exact={true} path='/events' element={<Events />} />
