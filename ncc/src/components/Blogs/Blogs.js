@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './Blogs.css';
 
-export default function Blogs() {
+function Blogs() {
     const blogs = [
         {
             href: "./blog-aj",
@@ -30,7 +30,7 @@ export default function Blogs() {
         }
     ];
 
-    useEffect(() =>{
+    useEffect(() => {
         document.title = 'Blogs – NCC';
     }, []);
 
@@ -65,3 +65,5 @@ export default function Blogs() {
         </div>
     );
 }
+
+export default Blogs;

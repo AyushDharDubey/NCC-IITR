@@ -122,4 +122,4 @@ import React, {useState,useEffect} from 'react'
         </>
     );
 }
-export default Navbar
+export default Navbar;

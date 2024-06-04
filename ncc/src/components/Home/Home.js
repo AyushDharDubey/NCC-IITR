@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Home.css';
 
-export default function Home() {
+function Home() {
   useEffect(() => {
     document.title = 'NCC – IITR';
-}, []);
+  }, []);
   return (
     <>
       <div id="homeCarousel" class="carousel slide carousel-home" data-bs-ride="carousel" >
@@ -104,3 +104,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

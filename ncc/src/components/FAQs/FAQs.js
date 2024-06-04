@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react'
 import './FAQs.css';
 
-export default function AnnualReport() {
+function FAQs() {
     useEffect(() => {
         document.title = 'FAQs – NCC';
     }, []);
-    
+
     return (
         <div class="container mb-5">
             <p class="heading">How can we help you?</p>
             <div class="container mt-5 col-md-9">
                 <div class="row justify-content-center">
-                        <div class="search-bar">
-                            <input type="text" placeholder="Type keyword to find answers" />
-                                <i class="fa fa-search search-icon"></i>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Type keyword to find answers" />
+                        <i class="fa fa-search search-icon"></i>
                     </div>
                 </div>
             </div>
@@ -202,3 +202,5 @@ export default function AnnualReport() {
         </div>
     )
 }
+
+export default FAQs;
