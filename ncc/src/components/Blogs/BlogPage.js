@@ -76,7 +76,7 @@ export default function BlogPage() {
             <h4 style={{ textAlign: "center", fontWeight: "normal", fontSize: "27px", color: "#212487", marginTop: "0px" }}>
                 By {blogs[blogId]['author']} | {blogs[blogId]['date']}
             </h4>
-            <img src={blogs[blogId]['imgSrc']} alt="NCC-IITR" class="image"></img>
+            <img src={blogs[blogId]['imgSrc']} alt="NCC-IITR" class="blog-image"></img>
             <div class="blog-text mb-5">
             {blogs[blogId]['content'].map((para, key) => (
                 <p>{para}</p>
