@@ -1,12 +1,7 @@
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 
-function Navbar() {
-  return (
-    <div>Navbar</div>
-  )
-}
  function Navbar() {
     const location = useLocation();
     const [isShrunk, setIsShrunk] = useState(false);
