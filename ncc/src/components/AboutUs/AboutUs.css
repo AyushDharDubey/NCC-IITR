@@ -618,3 +618,14 @@ div {
     margin-right: auto;
   }
 
+.about-img1 {
+  height: 200px;
+  width: 200px;
+}
+.departments::-webkit-scrollbar {
+  display: none;
+}
+
+.about3img::-webkit-scrollbar {
+  display: none;
+}

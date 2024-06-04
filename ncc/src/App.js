@@ -9,7 +9,7 @@ import FAQs from "./components/FAQs/FAQs.js";
 import Events from "./components/Events/Events.js";
 import Footer from "./components/Footer/Footer.js";
 import Navbar from './components/Navbar/Navbar.js';
-import About from './components/About/About.js';
+import About from './components/AboutUs/AboutUs.js';
 
 
 function App() {
