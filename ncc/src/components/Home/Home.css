@@ -13,7 +13,7 @@
     margin-right: 5px;
 }
 
-.carousel-indicators button {
+#homeCarousel .carousel-indicators button {
     background-color: #053d4d !important;
     height: 15px;
     width: 15px;

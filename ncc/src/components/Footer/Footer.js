@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './Footer.css';
 
 
-const Footer = ({ id }) => {
+function Footer() {
 
   const [iconStates, setIconStates] = useState({
     contact_content: 'fa-plus',

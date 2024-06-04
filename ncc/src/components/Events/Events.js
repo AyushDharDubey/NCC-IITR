@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Events.css';
 
-export default function Events() {
+function Events() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const trackRef = useRef(null);
@@ -245,7 +245,7 @@ export default function Events() {
                                 ))}
                             </div>
                         </div>
-                        <div class="nav">
+                        <div class="nav event-nav">
                             <button className="prev" ref={prevRef}>
                                 <i class="fa fa-chevron-left"></i>
                             </button>
@@ -499,3 +499,5 @@ export default function Events() {
         </div >
     )
 }
+
+export default Events;

@@ -16,7 +16,7 @@ function Officers() {
       <div className="row row1">
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/newcoimg.jpg" alt="Col Anoop Vyas" className="rounded" />
+            <img src="/images/aboutus/newcoimg.jpg" alt="Col Anoop Vyas" className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
             <div className="fw-bold">Col Anoop Vyas</div>
@@ -25,7 +25,7 @@ function Officers() {
         </div>
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/Admin.jpg" alt="Col AK Nautiyal" className="rounded" />
+            <img src="/images/aboutus/Admin.jpg" alt="Col AK Nautiyal" className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
             <div className="fw-bold">Col AK Nautiyal</div>
@@ -37,7 +37,7 @@ function Officers() {
       <div className="row row2">
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/dn.jpg" alt="Dr Diptimayee Nayak" className="rounded" />
+            <img src="/images/aboutus/dn.jpg" alt="Dr Diptimayee Nayak" className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
             <div className="fw-bold">Dr Diptimayee Nayak</div>
@@ -51,7 +51,7 @@ function Officers() {
         </div>
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/mb.jpg" alt="Lt (Dr) Mukesh Bhardwaj" className="rounded" />
+            <img src="/images/aboutus/mb.jpg" alt="Lt (Dr) Mukesh Bhardwaj" className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
             <div className="fw-bold">Lt (Dr) Mukesh Bhardwaj</div>
@@ -65,7 +65,7 @@ function Officers() {
         </div>
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/is.jpg" alt="Lt (Dr) Inderdeep Singh" className="rounded" />
+            <img src="/images/aboutus/is.jpg" alt="Lt (Dr) Inderdeep Singh" className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
             <div className="fw-bold">Lt (Dr) Inderdeep Singh</div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './AnnualReport.css';
 
-export default function AnnualReport() {
+function AnnualReport() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const trackRef = useRef(null);
@@ -11,11 +11,6 @@ export default function AnnualReport() {
     const reports = [
         { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
         { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
     ];
 
     useEffect(() => {
@@ -126,3 +121,5 @@ export default function AnnualReport() {
         </div>
     );
 }
+
+export default AnnualReport;

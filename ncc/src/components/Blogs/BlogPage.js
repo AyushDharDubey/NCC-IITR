@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom';
 import './BlogPage.css';
 
-export default function BlogPage() {
+function BlogPage() {
     const params = useParams();
 
     const blogId = params.blogId;
@@ -13,7 +13,7 @@ export default function BlogPage() {
             title: "NCC IITR in Pre-Pandemic Days",
             author: "Abhishek Jha",
             date: "29 July, 2021",
-            imgSrc: "/images/blogs/ajBlog.jpg",
+            imgSrc: "/images/blogs/ajBlog.png",
             content: [
                 "When the historic Pearl Gate welcomes the new students inside the campus of the oldest technical institute in Asia, there is anticipation, excitement and joy in the air. The students, even after having done an extensive amount of research, are in awe of what all the institute has to offer, and the groups and clubs of IIT Roorkee are ready with open arms to welcome their new members. Among these groups is the 3UK CTR National Cadet Corps, one of the most decorated and respected groups of the campus. Known for its regular and active participation in numerous programmes of national importance, the NCC of IIT Roorkee is one of its kind, providing students with an opportunity to better themselves in myriad ways, inculcating in them the values of discipline, unity, teamwork and patriotism and inciting in them an insatiable hunger to do something for the country, to make our nation proud; these are the values and thoughts which leave an impact, strong and lifelong, on the personality of the cadets.",
                 "The NCC IIT Roorkee celebrates Independence and Republic days with an impressive Guard of Honour to the Director of the institute. Against a background of the venerated James Thomason building and the lush green grounds in front of it, the cadets, properly dressed and groomed, with weapons in their hands and glow of pride in their eyes, are the jewels of the celebration of National Festivals. What is behind this auspicious show is an enormous amount of discipline in the cadets, and a persistent effort to become better, better at everything that they do. During the practice marches, not everyone is equally comfortable with holding the rifle and parading, but they hold on and try to do the things as perfectly as possible. Not everyone is on time for the practice in the beginning but with time, the cadets become more serious about their punctuality. This is the first thing that the NCC teaches its cadets, the importance of time and punctuality; the spirit of unity and the value of discipline.",
@@ -42,7 +42,7 @@ export default function BlogPage() {
             title: " The Silent Pillars of Indian Army",
             author: "Chayan Ailawalia",
             date: "15 Aug, 2021",
-            imgSrc: "/images/blogs/general.jpg",
+            imgSrc: "/images/blogs/caBlog.jpg",
             content: [
                 "Most of us have easy and beautiful childhood memories. Going to school, meeting friends, going to the playground to play with friends, spending time with parents, and getting scolded for our mischiefs, without which the day always felt incomplete, are pleasant memories of our childhood. Weekends were fun as we spent the whole day with our family, playing games, watching movies, or sometimes going on a short trip. The memories of festivals are always scintillating in our minds. The happiness and joy of celebrating the festivals with our loved ones are always special. But everybody is not fortunate enough to experience this smooth, joyful life.",
                 "We have always believed that the life of armed personnel is very strenuous, and we owe them a lot. But the families of armed personnel also have to go through a lot in their life, especially if it is a nuclear family. A transfer is a common thing in the life of all the armed personnel. Every two or three years, a soldier is transferred to a new different city. Here the problem kicks off. The families of armed personnel have two choices: either to shift to the city along with the family's bread earner and live in the family quarters or stay in a single city away from their loved ones. The officers who are not much involved in the field job, such as doctors and engineers, usually prefer the first option. But this regular shifting is very tiring and disturbing for the families, especially children. The children have to leave all their friends behind, whom they played with every day, and go to a whole new city, and struggle to make new friends again. Though they can receive the love and care of a father, they are unable to make some good friends who can stay with for their whole school life, someone they can trust and rely on in times of sorrow. This migration even takes them away from all their relatives. The process leaves them wholly abandoned in an unfamiliar city with no one to support in times of any crisis.",
@@ -68,7 +68,7 @@ export default function BlogPage() {
         }
     };
 
-    useEffect(() =>{
+    useEffect(() => {
         document.title = blogs[blogId]['title'] + ' Blog – NCC';
     }, []);
 
@@ -82,12 +82,14 @@ export default function BlogPage() {
             </h4>
             <img src={blogs[blogId]['imgSrc']} alt="NCC-IITR" class="blog-image"></img>
             <div class="blog-text mb-5">
-            {blogs[blogId]['content'].map((para, key) => (
-                <p>{para}</p>
-            ))}
+                {blogs[blogId]['content'].map((para, key) => (
+                    <p>{para}</p>
+                ))}
                 <br />
                 <p>Jai Hind!</p>
             </div>
         </div >
     );
 }
+
+export default BlogPage;
