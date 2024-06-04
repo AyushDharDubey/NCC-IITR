@@ -68,6 +68,10 @@ export default function BlogPage() {
         }
     };
 
+    useEffect(() =>{
+        document.title = blogs[blogId]['title'] + ' Blog – NCC';
+    }, []);
+
     return (
         <div className="blog">
             <h2 style={{ textAlign: "center", fontSize: "40px", fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", marginBottom: "15px" }}>

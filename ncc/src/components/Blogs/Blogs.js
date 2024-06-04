@@ -30,6 +30,10 @@ export default function Blogs() {
         }
     ];
 
+    useEffect(() =>{
+        document.title = 'Blogs – NCC';
+    }, []);
+
 
     return (
         <div id="list" class="container d-flex flex-wrap p-0 justify-content-evenly blogList">
@@ -59,5 +63,5 @@ export default function Blogs() {
                 </div>
             ))}
         </div>
-    )
+    );
 }
