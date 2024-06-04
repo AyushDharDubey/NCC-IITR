@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
-import "./About.css";
+import "./AboutUs.css";
 import Officers from './Officers.js';
+import Und from './Und.js';
+import ActivitySlideshow from './Activity.js';
 import Mteam from './Mteam.js';
-const About = () => {
+const AboutUs = () => {
 
   return (
     <div>
+      <Und/>
+      <ActivitySlideshow/>
       <Officers/>
       <Mteam />
     </div>
   );
 };
 
-export default About;
+export default AboutUs;
