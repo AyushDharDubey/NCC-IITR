@@ -9,13 +9,13 @@ export default function AnnualReport() {
     const carouselContainerRef = useRef(null);
 
     const reports = [
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        // { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        // { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        // { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        // { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
-        // { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
+        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
+        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
+        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "/images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
     ];
 
     useEffect(() => {
@@ -76,7 +76,7 @@ export default function AnnualReport() {
                 <div className='curr-year'>
                     <div className="Report-box">
                         <a href="https://drive.google.com/file/d/1XQC6-aUcZG6igPKWHH0zacx0M0uEPU7l/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                            <img src="./images/annualreport/annlrp2023.jpg" alt="annual report 23-24" />
+                            <img src="/images/annualreport/annlrp2023.jpg" alt="annual report 23-24" />
                         </a>
                     </div>
                 </div>

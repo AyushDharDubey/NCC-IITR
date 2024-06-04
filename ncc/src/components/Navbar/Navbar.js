@@ -42,7 +42,7 @@ import React, {useState,useEffect} from 'react'
                 <div class="row ncc-navBar">
                     <div class="NCC-Logo">
                         <Link href="/">
-                            <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo" className={isShrunk ? 'ncc_shrink' : ''}></img>
+                            <img src="/images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo" className={isShrunk ? 'ncc_shrink' : ''}></img>
                         </Link>
                     </div>
                     <div class="col-10" id="navbar_NavLinks" className={` col-10 ${isShrunk ? 'navbar_shrink' : ''}`}>
@@ -78,7 +78,7 @@ import React, {useState,useEffect} from 'react'
                         </nav>
                     </div>
                     <div class="IITR-Logo">
-                        <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo" className={isShrunk ? 'iitr_shrink' : ''}></img></a>
+                        <a href="https://iitr.ac.in/"><img src="/images/IITR Logo.png" alt="IITR logo" id="IITR-Logo" className={isShrunk ? 'iitr_shrink' : ''}></img></a>
                     </div>
                 </div>
             </div>
@@ -87,17 +87,17 @@ import React, {useState,useEffect} from 'react'
             <div id="navbar1">
                 <div id="images" className="d-flex flex-row">
                     <Link href="/">
-                        <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo1"></img>
+                        <img src="/images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo1"></img>
                     </Link>
-                    <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
+                    <a href="https://iitr.ac.in/"><img src="/images/IITR Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
                 </div>
                 <div id="hamburger">
-                    <img id='ham-icon' src="./images/navbar/bars.svg" onClick={handleClick}></img>
+                    <img id='ham-icon' src="/images/navbar/bars.svg" onClick={handleClick}></img>
                 </div>
             </div>
             {/* Hamburger Menu bar*/}
             <div id="Menu" className={isActive ? '' : 'd-none'}>
-                <div><img src='./images/close.png' onClick={handleClick}></img></div>
+                <div><img src="/images/close.png" onClick={handleClick}></img></div>
                 <ul>
                     <li>
                         <Link aria-current="page" to="/">Home</Link>
