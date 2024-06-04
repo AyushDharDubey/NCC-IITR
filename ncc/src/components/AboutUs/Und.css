@@ -1,0 +1,26 @@
+/* Apply these styles to your React component */
+
+/* Wordmark (Primary Logo) */
+h2 {
+    font-weight: bold;
+    color: #003366; /* NCC Blue */
+  }
+  
+  /* Images in a row */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2%;
+  }
+  
+  /* Paragraph text */
+  p {
+    margin-top: 1%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Dark gray */
+  }
+  
+.about3img {
+    justify-content: space-around !important;
+}

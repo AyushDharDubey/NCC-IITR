@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
+import React, {useState,useEffect} from 'react'
 
-
-export default function Navbar() {
+ function Navbar() {
     const location = useLocation();
     const [isShrunk, setIsShrunk] = useState(false);
     const [isActive, setIsActive] = useState(false);
-   
+
     useEffect(() => {
         if (location.pathname === '/') {
             handleScroll();
@@ -15,7 +14,7 @@ export default function Navbar() {
         } else {
             setIsShrunk(true); 
         }
-    
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -123,3 +122,4 @@ export default function Navbar() {
         </>
     );
 }
+export default Navbar
