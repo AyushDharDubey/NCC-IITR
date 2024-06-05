@@ -451,10 +451,6 @@
 }
 
 @media only screen and (max-width: 760px) {
-  .nav-tabs {
-    flex-direction: column !important;
-  }
-
   .heading {
     margin-bottom: 36px;
     font-weight: 600;
@@ -522,10 +518,6 @@
   .section-2 .contact {
     font-size: 14px;
   }
-
-  .tab-content {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -536,6 +528,9 @@
   .alumni .section-1 .item,
   .alumni .section-2 .item {
     min-width: 300px;
+  }
+  .section-1, .section-2{
+    margin:0;
   }
 }
 
@@ -587,10 +582,6 @@
 
 /* ------READ MORE------- */
 @media only screen and (max-width: 760px) {
-  .long {
-    display: none;
-  }
-
   .ncc-about {
     overflow: hidden;
   }

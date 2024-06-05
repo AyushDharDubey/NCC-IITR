@@ -97,25 +97,24 @@ import React, {useState,useEffect} from 'react'
             </div>
             {/* Hamburger Menu bar*/}
             <div id="Menu" className={isActive ? '' : 'd-none'}>
-                <div><img src="/images/close.png" onClick={handleClick}></img></div>
                 <ul>
                     <li>
-                        <Link aria-current="page" to="/">Home</Link>
+                        <Link aria-current="page" to="/" onClick={handleClick}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/about-us">About</Link>
+                        <Link to="/about-us" onClick={handleClick}>About</Link>
                     </li>
                     <li>
-                        <Link to="/events">Events</Link>
+                        <Link to="/events" onClick={handleClick}>Events</Link>
                     </li>
                     <li>
-                        <Link to="/blogs">Blogs</Link>
+                        <Link to="/blogs" onClick={handleClick}>Blogs</Link>
                     </li>
                     <li>
-                        <Link to="/faqs">FAQs</Link>
+                        <Link to="/faqs" onClick={handleClick}>FAQs</Link>
                     </li>
                     <li>
-                        <Link to="/annual-report">Annual Reports</Link>
+                        <Link to="/annual-report" onClick={handleClick}>Annual Reports</Link>
                     </li>
                 </ul>
             </div>

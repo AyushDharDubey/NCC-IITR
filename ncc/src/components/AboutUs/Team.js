@@ -2,76 +2,168 @@ import React, { useState } from 'react';
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState('ADMINISTRATION');
-  const [activeTabPastTeam, setActiveTabPastTeam] = useState("2022-2023");
+  const [activeTabPastTeam, setActiveTabPastTeam] = useState("2023-2024");
   const teamData = {
     ADMINISTRATION: [
       {
-        name: 'HARDIK SAHNI',
+        name: 'AMAN KUMAR',
         designation: 'General Secretary',
-        email: 'h_sahni@ee.iitr.ac.in',
-        phone: '91-9302286449',
+        email: 'aman_k1@ece.iitr.ac.in',
+        phone: '+91-7464887593',
       },
       {
-        name: 'HIMANSHU RANJAN',
+        name: 'ARYAN MISHRA',
         designation: 'Deputy General Secretary',
-        email: 'h_ranjan@ece.iitr.ac.in',
-        phone: '91-8178818593',
-      },
-    ],
-    DESIGN: [
-      {
-        name: 'DHIRAJ KUMAR',
-        designation: 'Joint Secretary',
-        email: 'd_kumar1@ph.iitr.ac.in',
+        email: 'aryan_m1@ece.iitr.ac.in',
+        phone: '+91-7673063605',
       },
       {
-        name: 'GAURAV',
-        designation: 'Joint Secretary',
-        email: 'g_byadwal@ar.iitr.ac.in',
-      },
-    ],
-    'WEB-D': [
-      {
-        name: 'AMAN SHRIVASTAVA',
-        designation: 'Joint Secretary',
-        email: 'a_shrivastava1@me.iitr.ac.in',
-      },
-    ],
-    EDITORIAL: [
-      {
-        name: 'HARSH KUMAR',
-        designation: 'Joint Secretary',
-        email: 'h_kumar1@ce.iitr.ac.in',
-      },
-    ],
-    EVENTS: [
-      {
-        name: 'KUSHAGRA PANJWANI',
-        designation: 'Joint Secretary',
-        email: 'k_panjwani@me.iitr.ac.in',
-      },
-      {
-        name: 'KUMKUM MEENA',
-        designation: 'Joint Secretary',
-        email: 'k_meena@ce.iitr.ac.in',
+        name: 'KANWAR ANMOL SINGH',
+        designation: 'Deputy General Secretary',
+        email: 'kanwar_as@hs.iitr.ac.in',
+        phone: '+91-7347346875',
       },
     ],
     OPERATIONS: [
       {
-        name: 'ANSHU KHOKER',
+        name: 'ANKIT LAL',
         designation: 'Joint Secretary',
-        email: 'm_khoker@ce.iitr.ac.in',
+        email: 'ankit_l@ce.iitr.ac.in',
+        phone: '+91-9958718768',
       },
       {
-        name: 'RISHABH KOSTA',
+        name: 'ATHARV NANDKUMAR',
         designation: 'Joint Secretary',
-        email: 'r_kosta@me.iitr.ac.in',
-        phone: '91-9026693996',
+        email: 'atharva_ns@ece.iitr.ac.in',
+        phone: '+91-8010345453',
+      },
+      {
+        name: 'KAJAL KATARIA',
+        designation: 'Joint Secretary',
+        email: 'kajal_k@ce.iitr.ac.in',
+        phone: '+91-8477876989',
+      },
+    ],
+    EVENTS: [
+      {
+        name: 'HANSHIKA SONI',
+        designation: 'Joint Secretary',
+        email: 'hansika_s@ce.iitr.ac.in',
+        phone: '+91-8209472897',
+      },
+      {
+        name: 'PRATIK',
+        designation: 'Joint Secretary',
+        email: 'pratik@hs.iitr.ac.in',
+        phone: '+91-8856009384',
+      },
+      {
+        name: 'TAPISH VIKRAM',
+        designation: 'Joint Secretary',
+        email: 'tapish_v@me.iitr.ac.in',
+        phone: '+91-8979753464',
+      },
+    ],
+    UNIT: [
+      {
+        name: 'ISHA',
+        designation: 'Joint Secretary',
+        email: 'isha@me.iitr.ac.in',
+        phone: '+91-9958312529',
+      },
+      {
+        name: 'NEETU',
+        designation: 'Joint Secretary',
+        email: 'neetu@cy.iitr.ac.in',
+        phone: '+91-7986012845',
+      },
+      {
+        name: 'PRATHAMVEER SINGH',
+        designation: 'Joint Secretary',
+        email: 'prathamveer_s@me.iitr.ac.in',
+        phone: '+91-8855900021',
+      },
+      {
+        name: 'TADANGI DRAKSHAYANI',
+        designation: 'Joint Secretary',
+        email: 'tadangi_d@bt.iitr.ac.in',
+        phone: '+91-9390789510',
+      },
+    ],
+    DESIGN: [
+      {
+        name: 'ABHIUDIT SHARMA',
+        designation: 'Joint Secretary',
+        email: 'abhiudit_s@ar.iitr.ac.in',
+        phone: '+91-9205152911',
+      },
+      {
+        name: 'MANISH RANJAN',
+        designation: 'Joint Secretary',
+        email: 'manish_r@ce.iitr.ac.in',
+        phone: '+91-6205255659',
+      },
+    ],
+    'WEB-D': [
+      {
+        name: 'DEWANSH UPADHYAY',
+        designation: 'Joint Secretary',
+        email: 'dewansh_u@me.iitr.ac.in',
+        phone: '+91-8604435220',
+      },
+      {
+        name: 'DIVYA RAJ',
+        designation: 'Joint Secretary',
+        email: 'divya_r@me.iitr.ac.in',
+        phone: '+91-6299425399',
+      },
+    ],
+    MULTIMEDIA: [
+      {
+        name: 'DHEERAJ KUMAR MOURYA',
+        designation: 'Joint Secretary',
+        email: 'dheeraj_km@es.iitr.ac.in',
+        phone: '+91-8707215896',
+      },
+      {
+        name: 'YASH GEHLOT',
+        designation: 'Joint Secretary',
+        email: 'yash_g@ece.iitr.ac.in',
+        phone: '+91-9461896459',
+      },
+    ],
+    EDITORIAL: [
+      {
+        name: 'ARYAN RAJ',
+        designation: 'Joint Secretary',
+        email: 'aryan_r1@ece.iitr.ac.in',
+        phone: '+91-8690930289',
+      },
+      {
+        name: 'BHAVYA BHARGAV',
+        designation: 'Joint Secretary',
+        email: 'bhavya_b@ar.iitr.ac.in',
+        phone: '+91-7973004260',
       },
     ],
   };
 
   const alumniData = [
+    {
+      year: "2023-2024",
+      members: [
+        { name: "HARDIK SAHNI", designation: "General Secretary" },
+        { name: "HIMANSHU RANJAN", designation: "Deputy General Secretary" },
+        { name: "ANSHU KHOKER", designation: "Joint Secretary, Operations" },
+        { name: "RISHABH KOSTA", designation: "Joint Secretary, Operations" },
+        { name: "AMAN SHRIVASTAVA", designation: "Joint Secretary, Web-D" },
+        { name: "DHIRAJ KUMAR", designation: "Joint Secretary, Design" },
+        { name: "GAURAV", designation: "Joint Secretary, Design" },
+        { name: "HARSH KUMAR", designation: "Joint Secretary, Editorial" },
+        { name: "KUSHAGRA PANJWANI", designation: "Joint Secretary, Events" },
+        { name: "KUMKUM MEENA", designation: "Joint Secretary, Events" }
+      ]
+    },
     {
       year: "2022-2023",
       members: [
@@ -220,8 +312,24 @@ const Team = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="section-2 d-flex justify-content-evenly">
-                      {team.members.slice(3).map((member) => (
+                    <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(3, 6).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(6, 9).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(9).map((member) => (
                         <div className="item" key={member.name}>
                           <p className="name"><b>{member.name}</b></p>
                           <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>

@@ -66,7 +66,7 @@ function AnnualReport() {
 
     return (
         <div className='container'>
-            <p className="heading">Annual Reports</p>
+            <p className="heading" style={{marginTop:'122px'}}>Annual Reports</p>
             <div className="reports">
                 <div className='curr-year'>
                     <div className="Report-box">
