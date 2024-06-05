@@ -328,7 +328,7 @@ const Team = () => {
                         </div>
                       ))}
                     </div>
-                    <div className="section-2 d-flex justify-content-evenly">
+                    <div className="section-1 d-flex justify-content-evenly">
                       {team.members.slice(9).map((member) => (
                         <div className="item" key={member.name}>
                           <p className="name"><b>{member.name}</b></p>

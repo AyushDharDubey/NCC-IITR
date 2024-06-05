@@ -359,7 +359,7 @@ a#logo4:hover>img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     width: auto;
     padding: 0.5vh;
 }
@@ -370,9 +370,9 @@ a#logo4:hover>img {
 }
 #Menu{
     background: rgb(22, 25, 130);
-    width: 25vw;
-    position: absolute;
-    top: 12vh;
+    width: 50%;
+    position: fixed;
+    top: 10vh;
     z-index: 1000;
     right: 0;
     height:auto;

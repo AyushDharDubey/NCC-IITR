@@ -174,7 +174,7 @@
         height: 4px;
     }
 
-    .d-block {
+    #upcomingEventsCarousel .d-block {
         width: 50%;
 
     }
@@ -194,7 +194,7 @@
         width: 70%;
     }
 
-    .d-block {
+    #upcomingEventsCarousel .d-block {
         width: 60%;
     }
 
