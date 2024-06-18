@@ -10,47 +10,47 @@ function Events() {
 
     const events = [
         {
-            src: "/images/events/yoga.jpg",
+            src: "./images/events/yoga.jpg",
             alt: "Yoga Event",
             dataBsTarget: "#exampleModalp9"
         },
         {
-            src: "/images/events/bdc.jpeg",
+            src: "./images/events/bdc.jpeg",
             alt: "BDC Event",
             dataBsTarget: "#exampleModalp8"
         },
         {
-            src: "/images/events/marathon.jpg",
+            src: "./images/events/marathon.jpg",
             alt: "Marathon Event",
             dataBsTarget: "#exampleModalp7"
         },
         {
-            src: "/images/events/quiz.jpg",
+            src: "./images/events/quiz.jpg",
             alt: "Quiz Event",
             dataBsTarget: "#exampleModalp6"
         },
         {
-            src: "/images/events/hd.png",
+            src: "./images/events/hd.png",
             alt: "HD Event",
             dataBsTarget: "#exampleModalp5"
         },
         {
-            src: "/images/events/Run.jpg",
+            src: "./images/events/Run.jpg",
             alt: "Run Event",
             dataBsTarget: "#exampleModalp4"
         },
         {
-            src: "/images/events/KVDquiz.png",
+            src: "./images/events/KVDquiz.png",
             alt: "KVD Quiz Event",
             dataBsTarget: "#exampleModalp2"
         },
         {
-            src: "/images/events/Pentathlon.png",
+            src: "./images/events/Pentathlon.png",
             alt: "Pentathlon Event",
             dataBsTarget: "#exampleModalp3"
         },
         {
-            src: "/images/events/GenSD-Webinar1.jpg",
+            src: "./images/events/GenSD-Webinar1.jpg",
             alt: "GenSD Webinar",
             dataBsTarget: "#exampleModalp1"
         }
@@ -112,7 +112,7 @@ function Events() {
     }, []);
 
     return (
-        <div className='container'>
+        <div style={{marginBottom:'2vw'}}>
             <div className='upcoming-events'>
                 <div class="section-heading text-center d-flex align-items-center justify-content-around py-3">
                     <div class="line"></div>
@@ -128,7 +128,7 @@ function Events() {
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/images/events/trdd.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/trdd.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="changeCarouselInterval()" />
                             <div class="block">
                                 <div id="date">Date & Time - 26-01-2022</div>
                                 <div id="place">Place - IIT Roorkee </div>
@@ -136,7 +136,7 @@ function Events() {
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/events/vfl.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal2" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/vfl.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal2" onclick="changeCarouselInterval()" />
 
                             <div class="block">
                                 <div id="date">Date & Time - 15-08-2022</div>
@@ -145,7 +145,7 @@ function Events() {
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/events/fc.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal3" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/fc.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal3" onclick="changeCarouselInterval()" />
                             <div class="block">
                                 <div id="date">Date & Time - 02-10-2022</div>
                                 <div id="place">Place - IITR</div>
@@ -168,7 +168,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/trdd.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                            <img src="./images/events/trdd.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name">Guard of Honour</p>
@@ -189,7 +189,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/vfl.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
+                                            <img src="./images/events/vfl.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name">Vocal for Local</p>
@@ -210,7 +210,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/fc.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
+                                            <img src="./images/events/fc.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name" style={{ paddingTop: '3px' }}>BEG Visit</p>
@@ -262,7 +262,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/GenSD-Webinar1.jpg" alt="events" style={{ width: '100%' }} />
+                                            <img src="./images/events/GenSD-Webinar1.jpg" alt="events" style={{ width: '100%' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name"
@@ -293,7 +293,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/KVDQwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
+                                            <img src="./images/events/KVDQwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name" style={{ paddingTop: '20px' }}>Kargil Vijay Diwas Quiz</p>
@@ -320,7 +320,7 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center">
-                                            <img src="/images/events/pentathlonwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
+                                            <img src="./images/events/pentathlonwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name" style={{ paddingTop: '15px' }}>Pentathlon</p>
@@ -356,7 +356,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/Run.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/Run.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Run for the Nation</p>
@@ -380,7 +380,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/hd.png" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/hd.png" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Hindi Diwas</p>
@@ -404,7 +404,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/quiz.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/quiz.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Quizzard</p>
@@ -429,7 +429,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/marathon.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/marathon.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Fresher's Marathon</p>
@@ -454,7 +454,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/bdc.jpeg" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/bdc.jpeg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Blood Donation Camp</p>
@@ -478,7 +478,7 @@ function Events() {
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center">
-                                            <img src="/images/events/yoga.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                            <img src="./images/events/yoga.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Yoga Sadna</p>

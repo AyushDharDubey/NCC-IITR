@@ -238,6 +238,11 @@
         margin-right: 15%;
         margin-bottom: 70px;
     }
+
+    #upcomingEventsCarousel {
+        width: 70%;
+        margin: auto;
+    }
 }
 
 
@@ -253,7 +258,7 @@
 
 .recom .carousel-container .card-container img {
     width: 100%;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 #upcomingEventsCarousel .carousel-container.card-container .card {
@@ -265,9 +270,11 @@
     display: flex;
     flex-direction: column;
 }
-.recom .carousel-container{
+
+.recom .carousel-container {
     position: relative;
 }
+
 .event-nav button {
     border: 0;
     background-color: #f3f9ff;
