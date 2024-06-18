@@ -1,6 +1,6 @@
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect,useRef} from 'react';
 
  function Navbar() {
     const location = useLocation();
@@ -36,6 +36,22 @@ import React, {useState,useEffect} from 'react';
         setIsActive(!isActive);   // This will toggle the class on click
     };
 
+    const node = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Check if the click is outside of your component's element
+      if (node.current && !node.current.contains(event.target)) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
     return (
         <><div>
             <div class="container-fluid navBar">
@@ -92,7 +108,7 @@ import React, {useState,useEffect} from 'react';
                     <a href="https://iitr.ac.in/"><img src="/images/IITR Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
                 </div>
                 <div id="hamburger">
-                    <img id='ham-icon' src="/images/navbar/bars.svg" onClick={handleClick}></img>
+                    <img id='ham-icon' src="/images/navbar/bars.svg" onClick={handleClick} ref={node}></img>
                 </div>
             </div>
             {/* Hamburger Menu bar*/}
