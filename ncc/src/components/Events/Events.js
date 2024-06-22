@@ -183,95 +183,52 @@ function Events() {
 
     return (
         <div style={{ marginBottom: '2vw' }}>
-            <div className='upcoming-events'>
+            <div className='recent-events'>
                 <div class="section-heading text-center d-flex align-items-center justify-content-around py-3">
                     <div class="line"></div>
-                    <p class="heading">Upcoming Events</p>
+                    <p class="heading">Recent Events</p>
                     <div class="line"></div>
                 </div>
 
-                <div id="upcomingEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
+                <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/events/trdd.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/26jan2024rec.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
+                            <div class="block">
+                                Guard Of Honour<br/>Republic Day 2024                                
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/events/vfl.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal2" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/26jan2024rec-.JPG" alt="events" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Guard Of Honour<br/>Republic Day 2024                                
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/events/fc.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal3" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/bdc2023rec.jpg" alt="BDC 2023" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Blood Donation Camp 2023
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/events/catc-2023-rec.jpg" alt="events" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                            Combined Annual Training Camp<br/>Nov-Dec 2023                            
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/events/catc2023rec.jpg" alt="events" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Combined Annual Training Camp<br/>Nov-Dec 2023
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#recentEventsCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#recentEventsCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
-                </div>
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style={{ display: 'none' }} aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <div class="container-fluid p-0">
-                                    <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center img-container">
-                                            <img src="./images/events/trdd.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
-                                        </div>
-                                        <div class="col-6 modal-event">
-                                            <p class="text-center event-name">Guard of Honour</p>
-                                            <p class="text-center event-des" style={{ padding: '13px' }}>This year's Independence day was special, as we were celebrating 75 years of independence. This special occasion implored for a grand celebration. Being a part of the celebration, NCC IIT Roorkee organised various events to commemorate the occasion. NCC's guard of honour, which has always been the centre of attraction of The Independence day, graced the event. NCC also conducted a seminar on "Partition Horrors Remembrance", which took us back to the dreadful days of partition.</p>
-                                            <p class="event-details">Date &amp; Time - 15-08-2022, 9:00 AM</p>
-                                            <p class="event-details">Venue - LBS Stadium</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" style={{ display: 'none' }} aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <div class="container-fluid p-0">
-                                    <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center img-container">
-                                            <img src="./images/events/vfl.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
-                                        </div>
-                                        <div class="col-6 modal-event">
-                                            <p class="text-center event-name">Vocal for Local</p>
-                                            <p class="text-center event-des" style={{ padding: '30px' }}>Today is a historic day with regard to the freedom struggle. It was the day when people from all parts of India and from all religious groups, came to streets, demanding poorna swaraj and complete end of British rule. It was this campaign which shook the roots of British Empire and paved the way for swaraj(self-rule). On this significant occasion, NCC organised a 'Vocal for Local' rally across the IITR campus celebrating this remarkable event and also creating awareness about 'Vocal for Local' as in today's world self dependency in true swaraj.</p>
-                                            <p class="event-details">Date - 09-08-2022</p>
-                                            <p class="event-details">Venue - IITR Campus</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <div class="container-fluid p-0">
-                                    <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center img-container">
-                                            <img src="./images/events/fc.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
-                                        </div>
-                                        <div class="col-6 modal-event">
-                                            <p class="text-center event-name" style={{ paddingTop: '3px' }}>BEG Visit</p>
-                                            <p class="text-center event-des">NCC IIT Roorkee had conducted a visit to one of the oldest regiments in the Indian military, the Bengal Sappers, which is stationed in Roorkee and is trained by the Bengal Engineers Group (BEG). This visit was full of pride and ardour as the students got an opportunity to experience how our warriors train with fervour. They were made to have a tour of the military school, army labs, regiment parade ground, where they witnessed the daily procession of the army unit. They were exhibited many military weapons and tanks. NCC also paid a visit to the the regiment's war memorial, where the anecdotes of many brave soldiers were portrayed.</p>
-                                            <p class="event-details">Date - 06-08-2022</p>
-                                            <p class="event-details">Venue - BEG, Roorkee</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -735,7 +692,7 @@ function Events() {
                                             <img src="./images/events/15aug-2023.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
                                         </div>
                                         <div class="col-6 modal-event">
-                                            <p class="text-center event-name">GoH 15 Aug 2023</p>
+                                            <p class="text-center event-name">Guard Of Honour</p>
                                             <p class="text-center event-des" style={{ padding: '0px 15px' }}>
                                                 This year's Independence Day celebration at IIT Roorkee resonated with patriotic zeal and memorable events organized by NCC IIT Roorkee. The festivities commenced with a solemn flag hoisting ceremony, symbolizing our nation's freedom and sovereignty, evoking deep reverence among all present. The day embodied the essence of India's independence struggle, igniting a sense of pride and unity among the participants. The unwavering dedication of the cadets made the occasion truly unforgettable for everyone involved.                                            </p>
                                             <p class="event-details">Date &amp; Time - 15-08-2023, 9:00 AM</p>
@@ -766,7 +723,7 @@ function Events() {
                                                 On this Sunday, the 8th of October, NCC IIT Roorkee has made arrangements for a Blood Donation Camp on campus at SAC. Join us as we put our hands together towards the future of the country.
                                                 Let's come together, unite our strengths, donate blood and create a ripple effect of kindness that will touch countless lives. See you there on the Sunday!                                           </p>
                                             <p class="event-details">Date &amp; Time - 08-10-2023, 10:00 AM</p>
-                                            <p class="event-details">Venue - SAC</p>
+                                            <p class="event-details">Venue - SAC, IITR</p>
                                         </div>
                                     </div>
                                 </div>
@@ -792,7 +749,7 @@ function Events() {
                                                 and other cadets from nearby colleges in Haridwar District under the 3 UK CTR NCC
                                                 Roorkee.
                                             </p>
-                                            <p class="event-details">Date - 27-11-2023</p>
+                                            <p class="event-details">Date - 27-11-2023 to 05-12-2023</p>
                                             <p class="event-details">Venue - IIT Roorkee</p>
                                         </div>
                                     </div>
@@ -840,8 +797,8 @@ function Events() {
                                                 <br />
                                                 A dedicated team of 25 cadets from NCC IIT Roorkee stood by, spreading hope throughout the community every step of the way.
                                             </p>
-                                            <p class="event-details">Date &amp; Time - 26-01-2024, 9:00 AM</p>
-                                            <p class="event-details">Venue - Thomso Ground</p>
+                                            <p class="event-details">Date - 20-03-2024</p>
+                                            <p class="event-details">Venue - Bhangeri, Roorkee</p>
                                         </div>
                                     </div>
                                 </div>
@@ -849,21 +806,21 @@ function Events() {
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="exampleModalp24" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered" style={{maxWidth:'1000px'}}>
+                <div className="modal fade" id="exampleModalp23" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '1000px' }}>
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center img-container">
-                                            <img src="./images/events/BEG2024.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0'}} />
+                                            <img src="./images/events/BEG2024.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name" style={{ paddingBottom: '7px' }}>BEG Visit</p>
                                             <p class="text-center event-des">
                                                 20 cadets from 3 UK CTR NCC Roorkee visited the Bengal Engineers Group and Center, Roorkee at the annual event "Exercise Jal Taranga", organised by the Bengal Sappers. The event was conducted gracefully by showcasing the task of corps of engineers in Indian Army during war and peace times.
-                                            <br/>NCC IIT Roorkee hails the sappers who, by implementation of their knowledge, serve the nation and leave no stone unturned to neutralise the enemy.
-Jai Hind!
+                                                <br />NCC IIT Roorkee hails the sappers who, by implementation of their knowledge, serve the nation and leave no stone unturned to neutralise the enemy.
+                                                Jai Hind!
                                             </p>
                                             <p class="event-details">Date & Time - 10-04-2024, 8:00 AM</p>
                                             <p class="event-details">Venue - BEG, Roorkee</p>
