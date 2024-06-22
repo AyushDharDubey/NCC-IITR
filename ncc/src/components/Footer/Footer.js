@@ -17,10 +17,12 @@ function Footer() {
   const handleClick = (id, ref) => {
     setIconStates((prevStates) => {
       const newState = prevStates[id] === 'fa-plus' ? 'fa-minus' : 'fa-plus';
-      if(newState == 'fa-plus'){ref.current.classList.remove(`${id}_0`)
-    }
-      else{ref.current.classList.add(`${id}_0`);
-    }
+      if (newState == 'fa-plus') {
+        ref.current.classList.remove(`${id}_0`)
+      }
+      else {
+        ref.current.classList.add(`${id}_0`);
+      }
       return { ...prevStates, [id]: newState };
     });
   };
@@ -41,11 +43,10 @@ function Footer() {
               <img src="./images/svgs/phoneIcon.svg" />
               <div className="px-2">
                 <p id="content" className="m-0 pb-1">
-                  +91 9302286449
+                  +91 7464887593
                 </p>
                 <p id="content" className="pb-1 m-0">
-                  +91 8178818593
-
+                  +91 7673063605
                 </p>
               </div>
             </div>
@@ -125,10 +126,10 @@ function Footer() {
                 <img src="./images/svgs/phoneIcon.svg" />
                 <div class="px-2">
                   <p id="content" class="m-0 pb-1">
-                    +91 9302286449
+                    +91 7464887593
                   </p>
                   <p id="content" class="pb-1 m-0">
-                    +91 8178818593
+                    +91 7673063605
                   </p>
                 </div>
               </div>

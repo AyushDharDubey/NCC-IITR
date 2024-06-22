@@ -20,6 +20,8 @@
 
 .modal-content {
     border: 0;
+    display:flex;
+    height:auto;
 }
 
 #date {
@@ -317,8 +319,9 @@
     font-size: 30px;
 }
 
-.img img {
-    height: 100%;
+.past-events .img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .card .info {
@@ -341,6 +344,11 @@
 .modal-event {
     background: #222588;
     color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 .modal-dialog {
@@ -350,6 +358,8 @@
 
 .modal-box {
     background: #DEE8F6;
+    display: flex;
+    width: 100%;
 }
 
 .event-name {

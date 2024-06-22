@@ -10,6 +10,76 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/BEG2024.jpeg",
+            alt: "BEG Visit",
+            dataBsTarget: "#exampleModalp23"
+        },
+        {
+            src: "./images/events/megaFoodDrive.jpeg",
+            alt: "Food Donation Drive with Robin Hood Army",
+            dataBsTarget: "#exampleModalp22"
+        },
+        {
+            src: "./images/events/26Jan2024.jpeg",
+            alt: "Guard of Honour on Republic Day",
+            dataBsTarget: "#exampleModalp21"
+        },
+        {
+            src: "./images/events/catc2023.jpg",
+            alt: "CATC",
+            dataBsTarget: "#exampleModalp20"
+        },
+        {
+            src: "./images/events/BDC2023.jpeg",
+            alt: "BDC Event",
+            dataBsTarget: "#exampleModalp19"
+        },
+        {
+            src: "./images/events/15aug2023.jpg",
+            alt: "Guard Of Honour",
+            dataBsTarget: "#exampleModalp18"
+        },
+        {
+            src: "./images/events/tree-plantation2023.jpg",
+            alt: "Tree Plantation Drive",
+            dataBsTarget: "#exampleModalp17"
+        },
+        {
+            src: "./images/events/flood-donation2023.jpg",
+            alt: "Flood Relief Donation Drive",
+            dataBsTarget: "#exampleModalp16"
+        },
+        {
+            src: "./images/events/atomic.jpg",
+            alt: "Atomic Artistry",
+            dataBsTarget: "#exampleModalp15"
+        },
+        {
+            src: "./images/events/selfDef.jpeg",
+            alt: "Self Defence Workshop",
+            dataBsTarget: "#exampleModalp14"
+        },
+        {
+            src: "./images/events/26Jan2023.jpeg",
+            alt: "Guard Of Honour",
+            dataBsTarget: "#exampleModalp13"
+        },
+        {
+            src: "./images/events/trdd.png",
+            alt: "Guard Of Honour",
+            dataBsTarget: "#exampleModalp12"
+        },
+        {
+            src: "./images/events/vfl.png",
+            alt: "Vocal For Local",
+            dataBsTarget: "#exampleModalp11"
+        },
+        {
+            src: "./images/events/fc.png",
+            alt: "BEG Visit",
+            dataBsTarget: "#exampleModalp10"
+        },
+        {
             src: "./images/events/yoga.jpg",
             alt: "Yoga Event",
             dataBsTarget: "#exampleModalp9"
@@ -112,7 +182,7 @@ function Events() {
     }, []);
 
     return (
-        <div style={{marginBottom:'2vw'}}>
+        <div style={{ marginBottom: '2vw' }}>
             <div className='upcoming-events'>
                 <div class="section-heading text-center d-flex align-items-center justify-content-around py-3">
                     <div class="line"></div>
@@ -121,36 +191,15 @@ function Events() {
                 </div>
 
                 <div id="upcomingEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./images/events/trdd.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="changeCarouselInterval()" />
-                            <div class="block">
-                                <div id="date">Date & Time - 26-01-2022</div>
-                                <div id="place">Place - IIT Roorkee </div>
-                                <div id="last_date">Last date of registration - 25-01-2022</div>
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./images/events/vfl.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal2" onclick="changeCarouselInterval()" />
-
-                            <div class="block">
-                                <div id="date">Date & Time - 15-08-2022</div>
-                                <div id="place">Place - IITR</div>
-                                <div id="last_date">Last date of registration - 14-08-2021</div>
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./images/events/fc.png" alt="events" class="d-block" data-bs-toggle="modal" data-bs-target="#exampleModal3" onclick="changeCarouselInterval()" />
-                            <div class="block">
-                                <div id="date">Date & Time - 02-10-2022</div>
-                                <div id="place">Place - IITR</div>
-                                <div id="last_date">Last date of registration - 02-10-2022</div>
-                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#upcomingEventsCarousel" data-bs-slide="prev">
@@ -167,7 +216,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/trdd.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -188,7 +237,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/vfl.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -209,7 +258,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/fc.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -261,7 +310,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/GenSD-Webinar1.jpg" alt="events" style={{ width: '100%' }} />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -292,7 +341,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/KVDQwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -319,7 +368,7 @@ function Events() {
                             <div class="modal-body p-0">
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
-                                        <div class="col-6 px-0 align-self-center">
+                                        <div class="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/pentathlonwinners.png" alt="events" style={{ width: '100%' }} class="imga" />
                                         </div>
                                         <div class="col-6 modal-event">
@@ -355,7 +404,7 @@ function Events() {
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/Run.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -372,14 +421,13 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
                 <div className="modal fade" id="exampleModalp5" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/hd.png" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -396,14 +444,13 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
                 <div className="modal fade" id="exampleModalp6" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/quiz.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -421,14 +468,13 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
                 <div className="modal fade" id="exampleModalp7" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/marathon.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -446,14 +492,13 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
                 <div className="modal fade" id="exampleModalp8" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/bdc.jpeg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -470,14 +515,13 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
                 <div className="modal fade" id="exampleModalp9" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center">
+                                        <div className="col-6 px-0 align-self-center img-container">
                                             <img src="./images/events/yoga.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -494,7 +538,342 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
+                <div className="modal fade" id="exampleModalp10" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/fc.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name" style={{ paddingTop: '3px' }}>BEG Visit</p>
+                                            <p class="text-center event-des">NCC IIT Roorkee had conducted a visit to one of the oldest regiments in the Indian military, the Bengal Sappers, which is stationed in Roorkee and is trained by the Bengal Engineers Group (BEG). This visit was full of pride and ardour as the students got an opportunity to experience how our warriors train with fervour. They were made to have a tour of the military school, army labs, regiment parade ground, where they witnessed the daily procession of the army unit. They were exhibited many military weapons and tanks. NCC also paid a visit to the the regiment's war memorial, where the anecdotes of many brave soldiers were portrayed.</p>
+                                            <p class="event-details">Date - 06-08-2022</p>
+                                            <p class="event-details">Venue - BEG, Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp11" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/vfl.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Vocal for Local</p>
+                                            <p class="text-center event-des" style={{ padding: '30px' }}>Today is a historic day with regard to the freedom struggle. It was the day when people from all parts of India and from all religious groups, came to streets, demanding poorna swaraj and complete end of British rule. It was this campaign which shook the roots of British Empire and paved the way for swaraj(self-rule). On this significant occasion, NCC organised a 'Vocal for Local' rally across the IITR campus celebrating this remarkable event and also creating awareness about 'Vocal for Local' as in today's world self dependency in true swaraj.</p>
+                                            <p class="event-details">Date - 09-08-2022</p>
+                                            <p class="event-details">Venue - IITR Campus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp12" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/trdd.png" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Guard of Honour</p>
+                                            <p class="text-center event-des" style={{ padding: '13px' }}>This year's Independence day was special, as we were celebrating 75 years of independence. This special occasion implored for a grand celebration. Being a part of the celebration, NCC IIT Roorkee organised various events to commemorate the occasion. NCC's guard of honour, which has always been the centre of attraction of The Independence day, graced the event. NCC also conducted a seminar on "Partition Horrors Remembrance", which took us back to the dreadful days of partition.</p>
+                                            <p class="event-details">Date &amp; Time - 15-08-2022, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp13" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/26Jan2023.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Guard of Honour</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                This year's Republic Day celebration at IIT Roorkee was marked with patriotic fervor and memorable events organized by NCC IIT Roorkee. The event began with the cadet's guard of honor, showcasing their discipline and precision, capturing the admiration of all attendees. The day celebrated the spirit of the Indian Republic, fostering national pride and unity among participants. The commendable efforts of the cadets made the day memorable for all.
+                                            </p>
+                                            <p class="event-details">Date &amp; Time - 26-01-2023, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp14" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/self.Def.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Self Defence Workshop</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                "The purpose of self-defence is not to win a fight, but to prevent one." - Bruce Lee
+                                                Join us for a hands-on Self-Defence Workshop on 19th March 2023, starting at 5:00 PM onwards at the Taekwondo Club Floor. This workshop is being organized by NCC IIT Roorkee in collaboration with the Taekwondo Club IIT Roorkee.
+                                            </p>
+                                            <p class="event-details">Date & Time - 19-03-2023, 5:00 PM</p>
+                                            <p class="event-details">Venue - Taekwondo Club area, above central gym</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp15" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/atomicWinner.jpg" alt="events" style={{ width: '100%' }} class="imga" />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name" style={{ paddingTop: '20px', fontSize: '35px', lineHeight: '40px' }}>Pokhran II Nuclear Test Painting Competition</p>
+                                            <p class="text-center event-des" style={{ paddingTop: '30px', fontSize: '15px' }}>
+                                                Winners <br />
+                                                1st : Mr. Nikita Tripathi <br />
+                                                2nd : Mr. Cheerag Shridhar<br />
+                                                3rd : Mr. Shrey Agrawal<br />
+                                            </p>
+                                            <p class="event-details" style={{ paddingTop: '40px', fontSize: '15px' }}>Date & Time -
+                                                13-05-2023</p>
+                                            <p class="event-details" style={{ fontSize: '15px' }}>Venue - IIT Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp16" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/flood-donation2023.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Flood Relief Donation Drive</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                In the guidance of the traditional values of helping the needy, NCC and NSS, IIT Roorkee came together to contribute to the flood affected society in collaboration with the IX Battalion The Jat Regiment. The donation, collected from the residents of IIT Roorkee, was was distributed on 5th August at The Bengal Engineers Group centre, Roorkee. The grace of the occassion was enhanced by the presence of the Commandant of BEG centre himself.
+                                            </p>
+                                            <p class="event-details">Date - 18-06-2023</p>
+                                            <p class="event-details">Venue - Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp17" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-5 px-0 align-self-center img-container">
+                                            <img src="./images/events/tree-plantation-2023.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-7 modal-event">
+                                            <p class="text-center event-name">Tree Plantation Drive</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                On August 13th, NCC, Institute Works Department, and the Green Committee joined forces
+                                                on August 13th for a tree planting event. This collaboration aimed to promote nature
+                                                appreciation within the campus. Volunteers from various backgrounds planted saplings
+                                                around the ABN Ground, symbolizing environmental commitment and inspiring a
+                                                connection with nature for future generations.
+                                            </p>
+                                            <p class="event-details">Date - 13-08-2023</p>
+                                            <p class="event-details">Venue - ABN Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp18" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/15aug-2023.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">GoH 15 Aug 2023</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                This year's Independence Day celebration at IIT Roorkee resonated with patriotic zeal and memorable events organized by NCC IIT Roorkee. The festivities commenced with a solemn flag hoisting ceremony, symbolizing our nation's freedom and sovereignty, evoking deep reverence among all present. The day embodied the essence of India's independence struggle, igniting a sense of pride and unity among the participants. The unwavering dedication of the cadets made the occasion truly unforgettable for everyone involved.                                            </p>
+                                            <p class="event-details">Date &amp; Time - 15-08-2023, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp19" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/BDC2023.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Blood Donation Event</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Join us for a Lifesaving Mission!
+                                                <br />
+                                                Are you ready to make a difference?
+                                                <br />
+                                                On this Sunday, the 8th of October, NCC IIT Roorkee has made arrangements for a Blood Donation Camp on campus at SAC. Join us as we put our hands together towards the future of the country.
+                                                Let's come together, unite our strengths, donate blood and create a ripple effect of kindness that will touch countless lives. See you there on the Sunday!                                           </p>
+                                            <p class="event-details">Date &amp; Time - 08-10-2023, 10:00 AM</p>
+                                            <p class="event-details">Venue - SAC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp20" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-5 px-0 align-self-center img-container">
+                                            <img src="./images/events/catc2023.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-7 modal-event">
+                                            <p class="text-center event-name">CATC</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Combined Annual Training Camp, which was a significant event organized by the National
+                                                Cadet Corps (NCC) in IIT Roorkee. CATC camps serve as platforms for cadets to undergo
+                                                intensive training in a structured environment. This camp features NCC IIT Roorkee cadets
+                                                and other cadets from nearby colleges in Haridwar District under the 3 UK CTR NCC
+                                                Roorkee.
+                                            </p>
+                                            <p class="event-details">Date - 27-11-2023</p>
+                                            <p class="event-details">Venue - IIT Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp21" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/26Jan2024.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">GoH 26 Jan 2024</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                This year's Republic Day celebration at IIT Roorkee reverberated with patriotic fervor and remarkable events orchestrated by NCC IIT Roorkee. The day commenced with a dignified flag hoisting ceremony, symbolizing the spirit of our nation's democratic values and unity in diversity, evoking profound respect among all attendees. The unwavering commitment of the cadets made the event truly memorable and resonant for all who were part of it.
+                                            </p>
+                                            <p class="event-details">Date &amp; Time - 26-01-2024, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp22" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/megaFoodDrive.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Mega Food Drive</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                In a heartwarming act of kindness, NCC IIT Roorkee collaborated with the Robinhood Army to provide more than 100 food packets packed with essential nourishment to families residing in the IIT Roorkee Labour Camp on 20th of March, 2024. Moreover, this collaborative effort brought joy to children's faces by distributing toys and teddy bears.
+                                                <br />
+                                                A dedicated team of 25 cadets from NCC IIT Roorkee stood by, spreading hope throughout the community every step of the way.
+                                            </p>
+                                            <p class="event-details">Date &amp; Time - 26-01-2024, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp24" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" style={{maxWidth:'1000px'}}>
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/BEG2024.jpeg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0'}} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name" style={{ paddingBottom: '7px' }}>BEG Visit</p>
+                                            <p class="text-center event-des">
+                                                20 cadets from 3 UK CTR NCC Roorkee visited the Bengal Engineers Group and Center, Roorkee at the annual event "Exercise Jal Taranga", organised by the Bengal Sappers. The event was conducted gracefully by showcasing the task of corps of engineers in Indian Army during war and peace times.
+                                            <br/>NCC IIT Roorkee hails the sappers who, by implementation of their knowledge, serve the nation and leave no stone unturned to neutralise the enemy.
+Jai Hind!
+                                            </p>
+                                            <p class="event-details">Date & Time - 10-04-2024, 8:00 AM</p>
+                                            <p class="event-details">Venue - BEG, Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div >
         </div >
     )
