@@ -1,6 +1,6 @@
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useRef} from 'react';
 
  function Navbar() {
     const location = useLocation();
@@ -36,6 +36,22 @@ import React, {useState,useEffect} from 'react'
         setIsActive(!isActive);   // This will toggle the class on click
     };
 
+    const node = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Check if the click is outside of your component's element
+      if (node.current && !node.current.contains(event.target)) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
     return (
         <><div>
             <div class="container-fluid navBar">
@@ -47,7 +63,7 @@ import React, {useState,useEffect} from 'react'
                     </div>
                     <div class="col-10" id="navbar_NavLinks" className={` col-10 ${isShrunk ? 'navbar_shrink' : ''}`}>
                         <div class="pt-3 navItem" id="ncc-heading">
-                            <p class="heading-ncc-hn">नेशनल कैडेट कोर</p>
+                            <p class="heading-ncc-hn">राष्ट्रीय कैडेट कोर</p>
                             <p class="heading-ncc-en">National Cadet Corps, IIT Roorkee</p>
                         </div>
                         <nav class="navbar navbar-expand-lg navbar-dark navLinks py-0 box">
@@ -84,7 +100,7 @@ import React, {useState,useEffect} from 'react'
             </div>
         </div>
             {/* Mobile Navbar */}
-            <div id="navbar1">
+            <div id="navbar1" onClick={handleClick}>
                 <div id="images" className="d-flex flex-row">
                     <Link href="/">
                         <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo1"></img>
@@ -96,7 +112,7 @@ import React, {useState,useEffect} from 'react'
                 </div>
             </div>
             {/* Hamburger Menu bar*/}
-            <div id="Menu" className={isActive ? '' : 'd-none'}>
+            <div id="Menu" className={isActive ? '' : 'd-none'} onClick={handleClick}>
                 <ul>
                     <li>
                         <Link aria-current="page" to="/" onClick={handleClick}>Home</Link>
@@ -121,4 +137,5 @@ import React, {useState,useEffect} from 'react'
         </>
     );
 }
+
 export default Navbar;
