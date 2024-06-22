@@ -6,25 +6,25 @@ function Blogs() {
     const blogs = [
         {
             href: "./blog-aj",
-            imgSrc: "/images/blogs/ajBlog.jpg",
+            imgSrc: "./images/blogs/ajBlog.jpg",
             author: "Abhishek Jha",
             title: "NCC IITR in Pre-Pandemic Days"
         },
         {
             href: "./blog-vm",
-            imgSrc: "/images/blogs/vm.jpg",
+            imgSrc: "./images/blogs/vm.jpg",
             author: "Varun Mishra",
             title: "Role of NCC in Social Life"
         },
         {
             href: "./blog-ca",
-            imgSrc: "/images/blogs/general.jpg",
+            imgSrc: "./images/blogs/general.jpg",
             author: "Chayan Ailawalia",
             title: "The Silent Pillars of Indian Army"
         },
         {
             href: "./blog-rs",
-            imgSrc: "/images/blogs/rs.jpg",
+            imgSrc: "./images/blogs/rs.jpg",
             author: "Rohini Shrivastava",
             title: "Technological Advancements in the\nIndian Army"
         }

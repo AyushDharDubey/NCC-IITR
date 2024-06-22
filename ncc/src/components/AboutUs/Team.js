@@ -19,7 +19,7 @@ const Team = () => {
       },
       {
         name: 'KANWAR ANMOL SINGH',
-        designation: 'Deputy General Secretary',
+        designation: 'Deputy General Secretary (Unit)',
         email: 'kanwar_as@hs.iitr.ac.in',
         phone: '+91-7347346875',
       },

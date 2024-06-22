@@ -1,63 +1,39 @@
-#upcomingEventsCarousel .d-block {
+#recentEventsCarousel .d-block {
     margin: auto;
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
 }
 
-#upcomingEventsCarousel .carousel-item .block {
+#recentEventsCarousel .carousel-item .block {
     box-sizing: border-box;
     margin: 0px;
-    padding: 5px;
+    padding: 15px;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: #222588;
     border-radius: 25px;
-    width: 40%;
+    width: 50%;
     font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.6vw;
+    color: #fff;
 }
 
 .modal-content {
     border: 0;
+    display:flex;
+    height:auto;
 }
 
-#date {
-    margin-top: 5px;
-    padding-left: 5%;
-    display: inline-flex;
-    position: relative;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.6vw;
-    color: #fff;
-}
-
-#place {
-    margin-top: 5px;
-    padding-left: 10%;
-    padding-right: 6%;
-    display: inline-flex;
-    position: relative;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.6vw;
-    color: #fff;
-}
-
-#last_date {
-    margin-bottom: 5px;
-    text-align: center;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.6vw;
-    color: #fff;
-}
-
-#upcomingEventsCarousel .carousel {
+#recentEventsCarousel .carousel {
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 0px;
 }
 
-#upcomingEventsCarousel .carousel:hover {
+#recentEventsCarousel .carousel:hover {
     cursor: pointer;
 }
 
@@ -133,35 +109,6 @@
 }
 
 @media (max-width: 760px) {
-    #date {
-        margin-top: 5px;
-        padding-left: 5%;
-        display: inline-flex;
-        position: relative;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 2.3vw;
-        color: #fff;
-    }
-
-    #place {
-        margin-top: 5px;
-        padding-left: 10%;
-        padding-right: 6%;
-        display: inline-flex;
-        position: relative;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 2.3vw;
-        color: #fff;
-    }
-
-    #last_date {
-        margin-bottom: 5px;
-        text-align: center;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 2.3vw;
-        color: #fff;
-    }
-
     .heading {
         margin-bottom: 36px;
         font-weight: 600;
@@ -174,7 +121,7 @@
         height: 4px;
     }
 
-    #upcomingEventsCarousel .d-block {
+    #recentEventsCarousel .d-block {
         width: 50%;
 
     }
@@ -194,55 +141,28 @@
         width: 70%;
     }
 
-    #upcomingEventsCarousel .d-block {
+    #recentEventsCarousel .d-block {
         width: 60%;
-    }
-
-    #date {
-        margin: 0%;
-        padding: 0px;
-        padding-left: 5%;
-        display: inline-flex;
-        position: relative;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 3.4vw;
-        color: #fff;
-    }
-
-    #place {
-        margin: 0%;
-        padding: 0px;
-        padding-left: 5%;
-        display: inline-flex;
-        position: relative;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 3.4vw;
-        color: #fff;
-    }
-
-    #last_date {
-        margin: 0%;
-        padding: 3px;
-        padding-left: 5%;
-        text-align: center;
-        font-family: Verdana, Tahoma, sans-serif;
-        font-size: 3vw;
-        color: #fff;
     }
 
 }
 
 @media (min-width: 720px) {
-    #upcomingEventsCarousel .carousel {
+    #recentEventsCarousel .carousel {
         margin-left: 15%;
         margin-right: 15%;
         margin-bottom: 70px;
+    }
+
+    #recentEventsCarousel {
+        width: 70%;
+        margin: auto;
     }
 }
 
 
 @media (max-width:770px) {
-    #upcomingEventsCarousel .carousel-container .card-container {
+    #recentEventsCarousel .carousel-container .card-container {
         width: 56%;
         flex-shrink: 0;
         height: 250px;
@@ -253,10 +173,10 @@
 
 .recom .carousel-container .card-container img {
     width: 100%;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-#upcomingEventsCarousel .carousel-container.card-container .card {
+#recentEventsCarousel .carousel-container.card-container .card {
     width: 100%;
     height: 100%;
     border: 1px solid #ccc;
@@ -265,9 +185,11 @@
     display: flex;
     flex-direction: column;
 }
-.recom .carousel-container{
+
+.recom .carousel-container {
     position: relative;
 }
+
 .event-nav button {
     border: 0;
     background-color: #f3f9ff;
@@ -310,8 +232,9 @@
     font-size: 30px;
 }
 
-.img img {
-    height: 100%;
+.past-events .img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .card .info {
@@ -334,6 +257,11 @@
 .modal-event {
     background: #222588;
     color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 .modal-dialog {
@@ -343,6 +271,8 @@
 
 .modal-box {
     background: #DEE8F6;
+    display: flex;
+    width: 100%;
 }
 
 .event-name {

@@ -9,19 +9,23 @@ function Home() {
     <>
       <div id="homeCarousel" class="carousel slide carousel-home" data-bs-ride="carousel" >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="/images/home/carousel1.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
-          </div>
           <div class="carousel-item active">
-            <img src="/images/home/carousel2.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel4.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
           </div>
           <div class="carousel-item">
-            <img src="/images/home/carousel3.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
+            <img src="./images/home/carousel1.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home/carousel2.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home/carousel3.jpg" class="d-block w-100" style={{ marginTop: '0px' }} />
           </div>
         </div>
         <button class="carousel-control-prev" data-bs-target="#homeCarousel" type="button" data-bs-slide="prev">
@@ -40,7 +44,7 @@ function Home() {
           <div class="line"></div>
         </div>
         <div class="flex-container">
-          <img class="pics" src="/images/home/Aim.jpg" alt="Flag" style={{ position: 'relative' }} />
+          <img class="pics" src="./images/home/Aim.jpg" alt="Flag" style={{ position: 'relative' }} />
           <div class="text" style={{ fontWeight: 400 }}>
             <p>The Aims of the NCC laid out in 1988 have stood the test of time and continue to meet the
               requirements expected of it in the current socio-economic scenario of the country.
@@ -67,7 +71,7 @@ function Home() {
           <div class="line"></div>
         </div>
         <div class="flex-container">
-          <img class="pics" src="/images/home/Pledge.png" alt="Pledge" style={{ position: 'relative' }} />
+          <img class="pics" src="./images/home/Pledge.png" alt="Pledge" style={{ position: 'relative' }} />
           <div class="text">
             <p>We the cadets of the National Cadet Corps, do solemnly pledge that we shall always uphold the unity
               of India. We resolve to be disciplined and responsible citizens of our nation. We shall undertake

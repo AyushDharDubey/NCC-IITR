@@ -8,9 +8,9 @@ function UnD() {
       <h2 class="about-heading aboutheading2">Unity and Discipline</h2>
 
       <div class="about-images d-flex justify-content-around my-4">
-        <img src="/images/aboutus/aboutus1.jpg" style={{ width: '30%', borderRadius: '5px' }} />
-        <img src="/images/home/Aim.jpg" style={{ width: '30%', borderRadius: '5px' }} />
-        <img src="/images/aboutus/aboutNCC.jpg" style={{ width: '30%', borderRadius: '5px' }} />
+        <img src="./images/aboutus/aboutus1.jpg" style={{ width: '30%', borderRadius: '5px' }} />
+        <img src="./images/home/Aim.jpg" style={{ width: '30%', borderRadius: '5px' }} />
+        <img src="./images/aboutus/aboutNCC.jpg" style={{ width: '30%', borderRadius: '5px' }} />
       </div>
 
       <div class="ncc-about" style={{ padding: '20px' }}>

@@ -20,7 +20,7 @@
 .Report-box:hover {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%), 0 6px 20px 0 rgb(0 0 0 / 30%);
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .Report-box a {
@@ -38,6 +38,11 @@
     width: 100%;
 }
 
+.curr-year {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 750px) {
     .curr-year .Report-box {
         width: 35%;
@@ -46,7 +51,7 @@
     .prev-year {
         display: block;
         margin: 25px auto;
-        width: 75%;
+        width: 80%;
     }
 
     .reports .carousel-container {

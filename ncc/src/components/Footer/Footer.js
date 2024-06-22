@@ -17,10 +17,12 @@ function Footer() {
   const handleClick = (id, ref) => {
     setIconStates((prevStates) => {
       const newState = prevStates[id] === 'fa-plus' ? 'fa-minus' : 'fa-plus';
-      if(newState == 'fa-plus'){ref.current.classList.remove(`${id}_0`)
-    }
-      else{ref.current.classList.add(`${id}_0`);
-    }
+      if (newState == 'fa-plus') {
+        ref.current.classList.remove(`${id}_0`)
+      }
+      else {
+        ref.current.classList.add(`${id}_0`);
+      }
       return { ...prevStates, [id]: newState };
     });
   };
@@ -38,19 +40,18 @@ function Footer() {
               Contact Us:
             </span>
             <div className="d-flex align-items-center pt-2">
-              <img src="/images/svgs/phoneIcon.svg" />
+              <img src="./images/svgs/phoneIcon.svg" />
               <div className="px-2">
                 <p id="content" className="m-0 pb-1">
-                  +91 9302286449
+                  +91 7464887593
                 </p>
                 <p id="content" className="pb-1 m-0">
-                  +91 8178818593
-
+                  +91 7673063605
                 </p>
               </div>
             </div>
             <div class="d-flex align-items-center pt-2">
-              <img src="/images/svgs/emailIcon.svg" />
+              <img src="./images/svgs/emailIcon.svg" />
               <div class="px-3">
                 <p id="content" class="m-0 pb-1">
                   <a href="mailto:ncc@iitr.ac.in" class=" text-white text-decoration-none">ncc@iitr.ac.in</a>
@@ -63,10 +64,10 @@ function Footer() {
               Social Media:
             </span>
             <div class="d-flex align-items-center justify-content-between pt-4 social">
-              <a target="_blank" id="logo1" href="https://www.facebook.com/ncc.iitr"><img src="/images/svgs/facebookIcon.svg" class="me-2" /></a>
-              <a target="_blank" id="logo2" href="https://www.youtube.com/channel/UCrx5OBkbdv5dldJBDXFfJbA"><img src="/images/svgs/youtubeIcon.svg" class="me-2" /></a>
-              <a target="_blank" id="logo3" href="https://www.instagram.com/ncc.iitr/"><img src="/images/svgs/instagram.png" class="me-2" width="44px" height="44px" /></a>
-              <a target="_blank" id="logo4" href="https://goo.gl/maps/73UGFeqZSd5HjjZP9"><img src="/images/svgs/maps.png" class="me-2" width="44px" height="44px" /></a>
+              <a target="_blank" id="logo1" href="https://www.facebook.com/ncc.iitr"><img src="./images/svgs/facebookIcon.svg" class="me-2" /></a>
+              <a target="_blank" id="logo2" href="https://www.youtube.com/channel/UCrx5OBkbdv5dldJBDXFfJbA"><img src="./images/svgs/youtubeIcon.svg" class="me-2" /></a>
+              <a target="_blank" id="logo3" href="https://www.instagram.com/ncc.iitr/"><img src="./images/svgs/instagram.png" class="me-2" width="44px" height="44px" /></a>
+              <a target="_blank" id="logo4" href="https://goo.gl/maps/73UGFeqZSd5HjjZP9"><img src="./images/svgs/maps.png" class="me-2" width="44px" height="44px" /></a>
             </div>
           </div>
           <div class="d-flex flex-column text-left ele  px-2ment iit px-lg-4">
@@ -74,7 +75,7 @@ function Footer() {
               Website:
             </span>
             <div class="d-flex align-items-center pt-2">
-              <img src="/images/svgs/websiteIcon.svg" />
+              <img src="./images/svgs/websiteIcon.svg" />
               <div>
                 <a href="https://indiancc.nic.in/" target="_blank" id="content" class="text-decoration-none text-white">
                   NCC Official
@@ -82,7 +83,7 @@ function Footer() {
               </div>
             </div>
             <div class="d-flex align-items-center pt-2">
-              <img src="/images/svgs/websiteIcon.svg" />
+              <img src="./images/svgs/websiteIcon.svg" />
               <div>
                 <a href="https://www.iitr.ac.in/" target="_blank" id="content" class="m-0 pb-1">
                   IIT Roorkee
@@ -122,18 +123,18 @@ function Footer() {
             </div>
             <div id="contact_content" ref={contactContentRef} className="">
               <div class="d-flex align-items-center pt-3">
-                <img src="/images/svgs/phoneIcon.svg" />
+                <img src="./images/svgs/phoneIcon.svg" />
                 <div class="px-2">
                   <p id="content" class="m-0 pb-1">
-                    +91 9302286449
+                    +91 7464887593
                   </p>
                   <p id="content" class="pb-1 m-0">
-                    +91 8178818593
+                    +91 7673063605
                   </p>
                 </div>
               </div>
               <div class="d-flex align-items-center pt-2">
-                <img src="/images/svgs/emailIcon.svg" />
+                <img src="./images/svgs/emailIcon.svg" />
                 <div class="px-3">
                   <p id="content" class="m-0 pb-1">
                     <a href="mailto:ncc@iitr.ac.in" class="text-white text-decoration-none">ncc@iitr.ac.in</a>
@@ -172,7 +173,7 @@ function Footer() {
             </div>
             <div id="website_content" ref={websiteContentRef} className="">
               <div class="d-flex align-items-center pt-3">
-                <img src="/images/svgs/websiteIcon.svg" />
+                <img src="./images/svgs/websiteIcon.svg" />
                 <div class="px-3">
                   <a href="https://indiancc.nic.in/" target="_blank" id="content" class="text-decoration-none ncc-white">
                     NCC Official
@@ -180,7 +181,7 @@ function Footer() {
                 </div>
               </div>
               <div class="d-flex align-items-center pt-3">
-                <img src="/images/svgs/websiteIcon.svg" />
+                <img src="./images/svgs/websiteIcon.svg" />
                 <div class="px-3">
                   <a href="https://www.iitr.ac.in/" target="_blank" id="content" class="m-0 pb-1">
                     IIT Roorkee
@@ -190,10 +191,10 @@ function Footer() {
             </div>
           </div>
           <div class="d-flex align-items-center pt-1 pb-2">
-            <a target="_blank" id="logo1" href="https://www.facebook.com/ncc.iitr"><img src="/images/svgs/facebookIcon.svg" class="mx-2"></img></a>
-            <a target="_blank" id="logo2" href="https://www.youtube.com/channel/UCrx5OBkbdv5dldJBDXFfJbA"><img src="/images/svgs/youtubeIcon.svg" class="mx-2"></img></a>
-            <a target="_blank" id="logo3" href="https://www.instagram.com/ncc.iitr/"><img src="/images/svgs/instagram.png" class="mx-2" width="44px" height="44px"></img></a>
-            <a target="_blank" id="logo4" href="https://goo.gl/maps/73UGFeqZSd5HjjZP9"> < img src="/images/svgs/maps.png" class="mx-2" width="44px" height="44px"></img></a>
+            <a target="_blank" id="logo1" href="https://www.facebook.com/ncc.iitr"><img src="./images/svgs/facebookIcon.svg" class="mx-2"></img></a>
+            <a target="_blank" id="logo2" href="https://www.youtube.com/channel/UCrx5OBkbdv5dldJBDXFfJbA"><img src="./images/svgs/youtubeIcon.svg" class="mx-2"></img></a>
+            <a target="_blank" id="logo3" href="https://www.instagram.com/ncc.iitr/"><img src="./images/svgs/instagram.png" class="mx-2" width="44px" height="44px"></img></a>
+            <a target="_blank" id="logo4" href="https://goo.gl/maps/73UGFeqZSd5HjjZP9"> < img src="./images/svgs/maps.png" class="mx-2" width="44px" height="44px"></img></a>
           </div>
         </div>
       </div>
