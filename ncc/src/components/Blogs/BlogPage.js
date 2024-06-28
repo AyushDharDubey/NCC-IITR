@@ -52,7 +52,7 @@ function BlogPage() {
             ]
         },
         "blog-rs": {
-            title: "Technological Advancements in the\nIndian Army",
+            title: "Technological Advancements in the Indian Army",
             author: "Rohini Shrivastava",
             date: "15 Aug, 2021",
             imgSrc: "./images/blogs/rs.jpg",
