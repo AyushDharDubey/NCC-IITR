@@ -307,6 +307,10 @@
     .modal-dialog {
         width: 80%;
     }
+
+    .block {
+        display:none;
+    }
 }
 
 @media only screen and (max-width: 580px) {

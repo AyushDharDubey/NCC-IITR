@@ -26,7 +26,7 @@ function Blogs() {
             href: "./blog-rs",
             imgSrc: "./images/blogs/rs.jpg",
             author: "Rohini Shrivastava",
-            title: "Technological Advancements in the\nIndian Army"
+            title: "Technological Advancements in the..."
         }
     ];
 
