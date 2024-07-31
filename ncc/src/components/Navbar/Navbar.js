@@ -1,8 +1,8 @@
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
-import React, {useState,useEffect,useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
- function Navbar() {
+function Navbar() {
     const location = useLocation();
     const [isShrunk, setIsShrunk] = useState(false);
     const [isActive, setIsActive] = useState(false);
@@ -12,7 +12,7 @@ import React, {useState,useEffect,useRef} from 'react';
             handleScroll();
             window.addEventListener('scroll', handleScroll);
         } else {
-            setIsShrunk(true); 
+            setIsShrunk(true);
         }
 
         return () => {
@@ -38,27 +38,27 @@ import React, {useState,useEffect,useRef} from 'react';
 
     const node = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      // Check if the click is outside of your component's element
-      if (node.current && !node.current.contains(event.target)) {
-        setIsActive(false);
-      }
-    };
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // Check if the click is outside of your component's element
+            if (node.current && !node.current.contains(event.target)) {
+                setIsActive(false);
+            }
+        };
 
-    document.addEventListener('click', handleClickOutside);
+        document.addEventListener('click', handleClickOutside);
 
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
     return (
         <><div>
             <div class="container-fluid navBar">
                 <div class="row ncc-navBar">
                     <div class="NCC-Logo">
                         <Link href="/">
-                            <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo" className={isShrunk ? 'ncc_shrink' : ''}></img>
+                            <img src="./images/NCC_Logo.png" alt="NCC Logo" id="NCC-Logo" className={isShrunk ? 'ncc_shrink' : ''}></img>
                         </Link>
                     </div>
                     <div class="col-10" id="navbar_NavLinks" className={` col-10 ${isShrunk ? 'navbar_shrink' : ''}`}>
@@ -94,19 +94,19 @@ import React, {useState,useEffect,useRef} from 'react';
                         </nav>
                     </div>
                     <div class="IITR-Logo">
-                        <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo" className={isShrunk ? 'iitr_shrink' : ''}></img></a>
+                        <a href="https://iitr.ac.in/"><img src="./images/IITR_Logo.png" alt="IITR logo" id="IITR-Logo" className={isShrunk ? 'iitr_shrink' : ''}></img></a>
                     </div>
                 </div>
             </div>
         </div>
             {/* Mobile Navbar */}
-            <div id="navbar1" onClick={handleClick}>
+            <div id="navbar1">
                 <div id="images" className="d-flex flex-row">
                     <Link href="/">
-                        <img src="./images/NCC Logo.png" alt="NCC Logo" id="NCC-Logo1"></img>
+                        <img src="./images/NCC_Logo.png" alt="NCC Logo" id="NCC-Logo1"></img>
                     </Link>
-                    <a href="https://iitr.ac.in/"><img src="./images/IITR Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
-                </div>
+                    <a href="https://iitr.ac.in/"><img src="./images/IITR_Logo.png" alt="IITR logo" id="IITR-Logo1"></img></a>
+                </div>     
                 <div id="hamburger">
                     <img id='ham-icon' src="./images/navbar/bars.svg" onClick={handleClick}></img>
                 </div>
