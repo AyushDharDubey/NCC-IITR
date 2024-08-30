@@ -10,6 +10,16 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/space-day-2024.jpg",
+            alt: "National Space Day",
+            dataBsTarget: "#exampleModalp25"
+        },
+        {
+            src: "./images/events/15aug-2024.jpg",
+            alt: "Guard of Honour on Independence Day",
+            dataBsTarget: "#exampleModalp24"
+        },
+        {
             src: "./images/events/BEG2024.jpeg",
             alt: "BEG Visit",
             dataBsTarget: "#exampleModalp23"
@@ -193,33 +203,27 @@ function Events() {
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/events/26jan2024rec.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/15aug2024.jpg" alt="15 Aug 2024" class="d-block" onclick="changeCarouselInterval()" />
                             <div class="block">
-                                Guard Of Honour<br/>Republic Day 2024                                
+                                Guard Of Honour<br />Independence Day 2024
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/events/26jan2024rec-.JPG" alt="events" class="d-block" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/26jan2024rec.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
+                            <div class="block">
+                                Guard Of Honour<br />Republic Day 2024
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/events/26jan2024rec-.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
-                                Guard Of Honour<br/>Republic Day 2024                                
+                                Guard Of Honour<br />Republic Day 2024
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./images/events/bdc2023rec.jpg" alt="BDC 2023" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Blood Donation Camp 2023
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/catc-2023-rec.jpg" alt="events" class="d-block" onclick="changeCarouselInterval()" />
-                            <div className='block'>
-                            Combined Annual Training Camp<br/>Nov-Dec 2023                            
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/catc2023rec.jpg" alt="events" class="d-block" onclick="changeCarouselInterval()" />
-                            <div className='block'>
-                                Combined Annual Training Camp<br/>Nov-Dec 2023
                             </div>
                         </div>
                     </div>
@@ -824,6 +828,55 @@ function Events() {
                                             </p>
                                             <p class="event-details">Date & Time - 10-04-2024, 8:00 AM</p>
                                             <p class="event-details">Venue - BEG, Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp24" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/15aug-2024.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">GoH 15th Aug</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom—Jawaharlal Nehru
+                                                <br />Today, we paint the skies with vibrant hues of saffron, white, and green as our hearts swell with pride and patriotism. We raise our tricolour high and sing our anthem with fervor while honoring the legacy of those who fought for our right to self-determination. The air is filled with the echoes of their dreams and the promise of a united, prosperous India reaching new heights in every field as we uphold our claim of “Incredible India”.
+                                            </p>
+                                            <p class="event-details">Date &amp; Time - 15-08-2024, 9:00 AM</p>
+                                            <p class="event-details">Venue - Thomso Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp25" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/space-day-2024.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Space Day</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Are you ready to embark on an extraordinary adventure through space on first National Space Day with us?
+                                                <br />
+                                                On this Saturday, 24th August 2024, NCC IIT Roorkee is organising an exciting workshop in collaboration with Centre for Space, Science and Technology to commemorate the one year anniversary of the successful landing of Chandrayaan-3 on the lunar surface. Join us to explore the wonders of space in this engaging, hands-on workshop designed for participants of all ages.
+                                            </p>
+                                            <p class="event-details">Date &amp; Time - 24-08-2024, 3:00 PM</p>
+                                            <p class="event-details">Venue - DoMS - LH-1</p>
                                         </div>
                                     </div>
                                 </div>

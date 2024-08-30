@@ -33,18 +33,19 @@ function Officers() {
           </div>
         </div>
       </div>
+      <p/>
       {/* 2nd Row */}
-      <div className="row row2">
+      <div className="container-fluid row2 row">
         <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
           <div>
-            <img src="./images/aboutus/dn.jpg" alt="Dr Diptimayee Nayak" className="rounded" />
+            <img src="./images/aboutus/dps.jpg" alt="Dr Dharmendra Pratap Singh " className="rounded" />
           </div>
           <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
-            <div className="fw-bold">Dr Diptimayee Nayak</div>
+            <div className="fw-bold">Dr Dharmendra Pratap Singh</div>
             <div className="ncc-div-fs">Faculty Advisor, NCC IIT Roorkee</div>
             <div className="ncc-div-fs">
-              <a className="ncc-white text-decoration-none" href="mailto:dipti.nayak@hs.iitr.ac.in">
-                <i className="fas fa-envelope"></i> dipti.nayak@hs.iitr.ac.in
+              <a className="ncc-white text-decoration-none" href="mailto:dharmendra.singh@es.iitr.ac.in">
+                <i className="fas fa-envelope"></i> dharmendra.singh@es.iitr.ac.in
               </a>
             </div>
           </div>
@@ -75,8 +76,19 @@ function Officers() {
                 <i className="fas fa-envelope"></i> inderdeep.singh@me.iitr.ac.in
               </a>
             </div>
+          </div>
+        </div>
+        <div className="col d-flex flex-column align-items-center justify-content-center mb-4">
+          <div>
+            <img src="./images/aboutus/a.jpg" alt="Dr Abhishek" className="rounded" />
+          </div>
+          <div className="mt-1 ncc-white ncc-bg-cadet rounded p-2 text-center">
+            <div className="fw-bold">Dr Abhishek</div>
+            <div className="ncc-div-fs">Care Taker Officer</div>
             <div className="ncc-div-fs">
-              <i className="fas fa-phone-alt"></i> 91-1332-285614
+              <a className="ncc-white text-decoration-none" href="mailto:abhishek@ce.iitr.ac.in">
+                <i className="fas fa-envelope"></i> abhishek@ce.iitr.ac.in
+              </a>
             </div>
           </div>
         </div>

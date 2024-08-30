@@ -169,7 +169,7 @@ const Team = () => {
       members: [
         { name: "PRATYAKSH CHAUHAN", designation: "General Secretary" },
         { name: "CHAYAN AILAWALIA", designation: "Joint Secretary, Editorial" },
-        { name: "Rohit Kumar Bamnawat", designation: "Joint Secretary, Design" },
+        { name: "ROHIT KUMAR BAMNAWAT", designation: "Joint Secretary, Design" },
         { name: "RAHUL GOYAL", designation: "Joint Secretary, Web-D" },
         { name: "SUHALI KONDAPALLI", designation: "Joint Secretary, Training & Sports" },
         { name: "SHRIKANT", designation: "Joint Secretary, Events" }
@@ -248,6 +248,7 @@ const Team = () => {
                   {teamData[key].map((member, index) => (
                     <div className="item" key={index}>
                       <p className="name"><b>{member.name}</b></p>
+
 
                       <p className="designation"><i className="fa fa-user-tie"></i> {member.designation}</p>
                       <p className="contact">
