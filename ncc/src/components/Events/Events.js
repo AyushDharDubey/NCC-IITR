@@ -10,6 +10,52 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/guest-lec-col-anoop.jpg",
+            alt: "Guest Lecture by Col. Anoop Vyas",
+            dataBsTarget: "#exampleModalp35"
+        },
+        {
+            src: "./images/events/26jan2025.jpg",
+            alt: "Guard Of Honour on Republic Day",
+            dataBsTarget: "#exampleModalp34"
+        },
+        {
+            src: "./images/events/catc-camp-2024.jpg",
+            alt: "CATC CAMP - 29th Nov to 8th Dec",
+            dataBsTarget: "#exampleModalp33"
+        },
+        {
+            src: "./images/events/run-for-fun2024.jpg",
+            alt: "Run for Fun (NCC Day Celebration with 3uk ctr NCC Unit) - 17th November",
+            dataBsTarget: "#exampleModalp32"
+        },
+        {
+            src: "./images/events/quiz-drawing-competition2024.jpg",
+            alt: "Quiz and Drawing Competition (Constitution Day) - 11th November",
+            dataBsTarget: "#exampleModalp31"
+        },
+        {
+            src: "./images/events/blood-donation-camp-2024.jpg",
+            alt: "Blood Donation Camp - 20th October",
+            dataBsTarget: "#exampleModalp30"
+        },
+        {
+            src: "./images/events/firing-practice-2024.jpg",
+            alt: "Firing Practice (in BEG) - 9th October",
+            dataBsTarget: "#exampleModalp29"
+        },
+        {
+            src: "./images/events/gandhi-jayanti-quiz-2024.jpg",
+            alt: "Gandhi Jayanti (Quiz Competition)",
+            dataBsTarget: "#exampleModalp27"
+        },
+        {
+            src: "./images/events/cadet-bharti2024.jpg",
+            alt: "Cadet Bharti",
+            dataBsTarget: "#exampleModalp26"
+        },
+        //
+        {
             src: "./images/events/space-day-2024.jpg",
             alt: "National Space Day",
             dataBsTarget: "#exampleModalp25"
@@ -203,27 +249,27 @@ function Events() {
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/events/15aug2024.jpg" alt="15 Aug 2024" class="d-block" onclick="changeCarouselInterval()" />
-                            <div class="block">
-                                Guard Of Honour<br />Independence Day 2024
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/26jan2024rec.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
-                            <div class="block">
-                                Guard Of Honour<br />Republic Day 2024
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/26jan2024rec-.JPG" alt="26 Jan 2024" class="d-block" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
-                                Guard Of Honour<br />Republic Day 2024
+                                Guest Lecture By Col Anoop Vyas
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/events/bdc2023rec.jpg" alt="BDC 2023" class="d-block" onclick="changeCarouselInterval()" />
+                            <img src="./images/events/26jan2025-rec.jpg" alt="26 Jan 2025" class="d-block" onclick="changeCarouselInterval()" />
+                            <div class="block">
+                                Guard Of Honour<br />Republic Day 2025
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/events/26jan2025-rec2.jpg" alt="GoH 26 Jan 2025" class="d-block" onclick="changeCarouselInterval()" />
+                            <div class="block">
+                                Guard Of Honour<br /> Republic Day 2025
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/events/bdc-2024-rec.jpg" alt="BDC 2024" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
-                                Blood Donation Camp 2023
+                                Blood Donation Camp 2024
                             </div>
                         </div>
                     </div>
@@ -877,6 +923,273 @@ function Events() {
                                             </p>
                                             <p class="event-details">Date &amp; Time - 24-08-2024, 3:00 PM</p>
                                             <p class="event-details">Venue - DoMS - LH-1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp26" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/cadet-bharti2024.jpg"
+                                                alt="Cadet Bharti"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Cadet Bharti</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Join us for the annual Cadet Bharti where new cadets are inducted with pride and zeal.
+                                                Experience the spirit and camaraderie of NCC as we welcome the next generation of leaders.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 05-09-2024, 08:00 AM</p>
+                                            <p className="event-details">Venue - Football Grounds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp27" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/gandhi-jayanti-quiz-2024.jpg"
+                                                alt="Gandhi Jayanti (Quiz Competition)"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Gandhi Jayanti Quiz Competition</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Celebrate Gandhi Jayanti with an engaging quiz that tests your knowledge about the life and values of Mahatma Gandhi.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 02-10-2024, 09:00 AM - 11:00 PM</p>
+                                            <p className="event-details">Venue - Online</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp29" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/firing-practice-2024.jpg"
+                                                alt="Firing Practice (in BEG) - 9th October"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Firing Practice</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Participate in an immersive firing practice session at BEG to improve your precision and control.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 09-10-2024, 02:00 PM</p>
+                                            <p className="event-details">Venue - BEG Firing Range</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp30" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/blood-donation-camp2024.jpg"
+                                                alt="Blood Donation Camp - 20th October"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Blood Donation Camp</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Join us in making a difference at our Blood Donation Camp. Your contribution can save lives and strengthen our community.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 20-10-2024, 08:00 AM Onwards</p>
+                                            <p className="event-details">Venue - SAC OAT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp31" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/quiz-drawing-competition2024.jpg"
+                                                alt="Quiz and Drawing Competition (Constitution Day) - 11th November"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Quiz &amp; Drawing Competition</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Celebrate Constitution Day by engaging in a quiz and drawing competition that honors the spirit of our nation.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 11-11-2024, 11:00 AM</p>
+                                            <p className="event-details">Venue - APJ Abdul Kalam Block</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp32" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/run-for-fun-2024.jpg"
+                                                alt="Run for Fun (NCC Day Celebration with 3uk ctr NCC Unit) - 17th November"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Run for Fun</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Get ready for a fun-filled run as we celebrate NCC Day with energy and enthusiasm.
+                                                Join the race and showcase your team spirit.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 17-11-2024, 07:00 AM</p>
+                                            <p className="event-details">Starting Point - ABN Ground</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp33" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '1000px' }}>
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/catc-camp2024.jpg"
+                                                alt="CATC CAMP - 29th Nov to 8th Dec"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>CATC CAMP</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Experience an intense and transformative camp at CATC from 29th November to 8th December.
+                                                A perfect blend of discipline, training, and camaraderie awaits you.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 29-11-2024 to 08-12-2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp34" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/26jan2025.jpg"
+                                                alt="Guard Of Honour on Republic Day"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>
+                                                Guard Of Honour on Republic Day
+                                            </p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Celebrate the pride of our nation as we perform a majestic Guard Of Honour on Republic Day.
+                                            </p>
+                                            <p className="event-details">
+                                                Date &amp; Time - 26-01-2025, 8:45 AM
+                                            </p>
+                                            <p className="event-details">
+                                                Venue - In front of the Main Building, IIT Roorkee
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp35" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '1000px' }}>
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/guest-lec-col-anoop.jpg"
+                                                alt="Guest Lecture by Col. Anoop Vyas"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>
+                                                Guest Lecture by Col. Anoop Vyas
+                                            </p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Our unit’s CO, Col. Anoop Vyas, delivered an inspiring guest lecture on
+                                                <strong> "The Role of Engineers Corps: The Less Spoken Heroes of the Indian Armed Forces"</strong>.
+                                            </p>
+                                            <p className="event-details">
+                                                Date &amp; Time - 29th Jan 4:30 PM
+                                            </p>
+                                            <p className="event-details">
+                                                Venue - Chemical Auditorium, IIT Roorkee
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
