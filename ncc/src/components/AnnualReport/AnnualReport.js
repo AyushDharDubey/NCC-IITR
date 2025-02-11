@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './AnnualReport.css';
 
 function AnnualReport() {
@@ -9,10 +10,10 @@ function AnnualReport() {
     const carouselContainerRef = useRef(null);
 
     const reports = [
-        { link: "https://drive.google.com/file/d/1JJJzp7LALiC8tbvQAH9ydi6dDROdmCXa/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2023.png", altText: "annual report 22-23" },
-        { link: "https://drive.google.com/file/d/1Z01hEDOIA37pr9Km8Xx5Jlvc2XaKz24_/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2022.png", altText: "annual report 21-22" },
-        { link: "https://drive.google.com/file/d/1kAgogATQnVMk3ikKk5sFv3QoAVrTZ-vW/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
-        { link: "https://drive.google.com/file/d/1b9w3FArFXU7Jj4sLXbRKhiCy7sEb2xTA/view?usp=sharing", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
+        { link: "./files/Annual report NCC 2022-23.pdf", imgSrc: "./images/annualreport/annlrp2023.png", altText: "annual report 22-23" },
+        { link: "./files/Annual Report 2021-22.pdf", imgSrc: "./images/annualreport/annlrp2022.png", altText: "annual report 21-22" },
+        { link: "./files/2020-21.pdf", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
+        { link: "./files/2019-20.pdf", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
     ];
 
     useEffect(() => {
@@ -68,11 +69,11 @@ function AnnualReport() {
 
     return (
         <div className='container'>
-            <p className="heading" style={{marginTop:'122px'}}>Annual Reports</p>
+            <p className="heading" style={{ marginTop: '122px' }}>Annual Reports</p>
             <div className="reports">
                 <div className='curr-year'>
                     <div className="Report-box">
-                        <a href="https://drive.google.com/file/d/1XQC6-aUcZG6igPKWHH0zacx0M0uEPU7l/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                        <a href="./files/Annual Report NCC 2023-24.pdf" target="_blank" download>
                             <img src="./images/annualreport/annlrp2024.png" alt="annual report 23-24" />
                         </a>
                     </div>
@@ -84,7 +85,7 @@ function AnnualReport() {
                                 <div className="card-container" key={index}>
                                     <div className="card">
                                         <div className="img">
-                                            <a href={report.link} target="_blank" rel="noopener noreferrer">
+                                            <a href={report.link} target="_blank" download>
                                                 <img src={report.imgSrc} alt={report.altText} style={{ width: '100%', borderRadius: '10px' }} />
                                             </a>
                                         </div>
@@ -99,7 +100,7 @@ function AnnualReport() {
                                         <div className="card-container" key={index} ref={cardContainerRef}>
                                             <div className="card">
                                                 <div className="img">
-                                                    <a href={report.link} target="_blank" rel="noopener noreferrer">
+                                                    <a href={report.link} target="_blank" download>
                                                         <img src={report.imgSrc} alt={report.altText} style={{ width: '100%', borderRadius: '10px' }} />
                                                     </a>
                                                 </div>
