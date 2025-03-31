@@ -15,6 +15,11 @@ function Events() {
             dataBsTarget: "#exampleModalp35"
         },
         {
+            src: "https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg",
+            alt: "photoshoot event",
+            dataBsTarget: "#exampleModalp36"
+        },
+        {
             src: "./images/events/26jan2025.jpg",
             alt: "Guard Of Honour on Republic Day",
             dataBsTarget: "#exampleModalp34"
@@ -252,6 +257,12 @@ function Events() {
                             <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Guest Lecture By Col Anoop Vyas
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Photoshoot session in IITR
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -1182,6 +1193,41 @@ function Events() {
                                             </p>
                                             <p className="text-center event-des" style={{ padding: '0px 15px' }}>
                                                 Our unit’s CO, Col. Anoop Vyas, delivered an inspiring guest lecture on
+                                                <strong> "The Role of Engineers Corps: The Less Spoken Heroes of the Indian Armed Forces"</strong>.
+                                            </p>
+                                            <p className="event-details">
+                                                Date &amp; Time - 29th Jan 4:30 PM
+                                            </p>
+                                            <p className="event-details">
+                                                Venue - Chemical Auditorium, IIT Roorkee
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp36" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '1000px' }}>
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
+                                                alt="Photoshoot session in iitr"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>
+                                                Photoshoot session in IITR
+                                            </p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                At IIT Roorkee, photoshoot sessions are a popular way for students to capture memories, whether for personal keepsakes, club promotions, or academic events. The picturesque campus, with its grand colonial-era architecture, lush green spaces, and iconic locations like the Main Building, Thomason Bridge, and Senate Hall, provides a perfect backdrop for photography.
                                                 <strong> "The Role of Engineers Corps: The Less Spoken Heroes of the Indian Armed Forces"</strong>.
                                             </p>
                                             <p className="event-details">

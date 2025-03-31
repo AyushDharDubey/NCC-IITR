@@ -11,6 +11,7 @@ function AnnualReport() {
 
     const reports = [
         { link: "./files/Annual report NCC 2022-23.pdf", imgSrc: "./images/annualreport/annlrp2023.png", altText: "annual report 22-23" },
+        { link: "https://google.com/", imgSrc: "https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg", altText: "photoshoot sesson in iitr" },
         { link: "./files/Annual Report 2021-22.pdf", imgSrc: "./images/annualreport/annlrp2022.png", altText: "annual report 21-22" },
         { link: "./files/2020-21.pdf", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
         { link: "./files/2019-20.pdf", imgSrc: "./images/annualreport/annlrp2020.jpg", altText: "annual report 19-20" },
