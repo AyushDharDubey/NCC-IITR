@@ -10,6 +10,11 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/pasteventeye.jpg",
+            alt: "Eye and health checkup camp",
+            dataBsTarget: "#exampleModalp36"
+        },
+        {
             src: "./images/events/guest-lec-col-anoop.jpg",
             alt: "Guest Lecture by Col. Anoop Vyas",
             dataBsTarget: "#exampleModalp35"
@@ -248,6 +253,12 @@ function Events() {
 
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img src=".\images\events\recentryehealth.jpg" alt="free Eye and health checkup camp inauguration " class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Free Eye and Health Checkup camp
+                            </div>
+                        </div>
                         <div class="carousel-item active">
                             <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
@@ -1197,6 +1208,33 @@ function Events() {
                         </div>
                     </div>
                 </div>
+                <div className="modal fade" id="exampleModalp36" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src=".\images\events\pasteventeye.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name">Blood Donation Event</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
+                                            Take Care of Your Vision & Well-Being!
+                                                <br />
+                                                Get a Free Eye & Health Checkup
+                                                <br />
+                                                Take advantage of a free eye and health checkup to ensure your well-being! Experienced doctors will conduct comprehensive eye and health tests, providing expert guidance for better care.                               </p>
+                                            <p class="event-details">Date &amp; Time - 26-02-2025, 02:00 PM</p>
+                                            <p class="event-details">Venue - SAC, IITR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div >
         </div >
     )
