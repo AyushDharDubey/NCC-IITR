@@ -10,7 +10,7 @@ function Events() {
 
     const events = [
         {
-            src: "./images/events/pasteventeye.jpg",
+            src: "./images/events/eyehealthcamp2.jpg",
             alt: "Eye and health checkup camp",
             dataBsTarget: "#exampleModalp36"
         },
@@ -254,9 +254,9 @@ function Events() {
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                            <img src=".\images\events\recentryehealth.jpg" alt="free Eye and health checkup camp inauguration " class="d-block" onclick="changeCarouselInterval()" />
+                            <img src=".\images\events\eyehealthcamp.jpg" alt="free Eye and health checkup camp" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
-                                Free Eye and Health Checkup camp
+                                Free Eye and Health Checkup Camp
                             </div>
                         </div>
                         <div class="carousel-item active">
@@ -1215,18 +1215,16 @@ function Events() {
                                 <div class="container-fluid p-0">
                                     <div class="row d-flex modal-box m-0">
                                         <div class="col-6 px-0 align-self-center img-container">
-                                            <img src=".\images\events\pasteventeye.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
+                                            <img src=".\images\events\eyehealthcamp2.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
                                         </div>
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name">Blood Donation Event</p>
-                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>
-                                            Take Care of Your Vision & Well-Being!
-                                                <br />
-                                                Get a Free Eye & Health Checkup
-                                                <br />
-                                                Take advantage of a free eye and health checkup to ensure your well-being! Experienced doctors will conduct comprehensive eye and health tests, providing expert guidance for better care.                               </p>
-                                            <p class="event-details">Date &amp; Time - 26-02-2025, 02:00 PM</p>
-                                            <p class="event-details">Venue - SAC, IITR</p>
+                                            <p class="text-center event-des" style={{ padding: '0px 15px' }}>Good vision is key to a better life, and regular eye checkups are essential for maintaining healthy eyesight. <br />
+Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-being where experienced doctors will conduct comprehensive eye and health tests, providing expert guidance; absolutely free.
+                                                
+                                                                              </p>
+                                            <p class="event-details">Date &amp; Time - 26-02-2025, 09:00 AM</p>
+                                            <p class="event-details">Venue - Students Activity Center, IIT Roorkee</p>
                                         </div>
                                     </div>
                                 </div>
