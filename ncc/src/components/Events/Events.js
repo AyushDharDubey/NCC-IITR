@@ -10,6 +10,11 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/Firing25.jpeg",
+            alt: "Firing Practice (in BEG) -  ",
+            dataBsTarget: "#exampleModalp36"
+        },
+        {
             src: "./images/events/guest-lec-col-anoop.jpg",
             alt: "Guest Lecture by Col. Anoop Vyas",
             dataBsTarget: "#exampleModalp35"
@@ -1190,6 +1195,34 @@ function Events() {
                                             <p className="event-details">
                                                 Venue - Chemical Auditorium, IIT Roorkee
                                             </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="modal fade" id="exampleModalp36" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img
+                                                src="./images/events/Firing-Practice25.jpeg"
+                                                alt="Firing Practice (in BEG) - 7th April"
+                                                className="d-block"
+                                                style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }}
+                                            />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Firing Practice</p>
+                                            <p className="text-center event-des" style={{ padding: '0px 15px' }}>
+                                                Participate in an immersive firing practice session at BEG to improve your precision and control.
+                                            </p>
+                                            <p className="event-details">Date &amp; Time - 07-04-2025, 07:00 AM to 01:00 PM</p>
+                                            <p className="event-details">Venue - BEG Firing Range</p>
                                         </div>
                                     </div>
                                 </div>
