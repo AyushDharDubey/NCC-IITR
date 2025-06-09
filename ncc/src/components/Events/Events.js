@@ -10,6 +10,12 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/9April.jpg",
+            alt: "Recreational Activity at AAD",
+            dataBsTarget: "#exampleModalp37"
+        },
+
+        {
             src: "./images/events/eyehealthcamp2.jpg",
             alt: "Eye and health checkup camp",
             dataBsTarget: "#exampleModalp36"
@@ -253,7 +259,7 @@ function Events() {
 
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item ">
                             <img src=".\images\events\eyehealthcamp.jpg" alt="free Eye and health checkup camp" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Free Eye and Health Checkup Camp
@@ -462,6 +468,32 @@ function Events() {
                         </div>
                     </div>
                 </div>
+
+<div className="modal fade" id="exampleModalp37" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/9April.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingTop: '20px' }}>Recreational Activity at AAD</p>
+                                            <p className="text-center event-des" style={{ paddingTop: '10px' }}>
+                                               Unwind, energize, and connect — Recreational Activities at AAD bring joy to every moment!
+                                            </p>
+                                            <p className="event-details">Date & Time - 9th April, 9:00 AM - 1:00 PM</p>
+                                            <p className="event-details">Venue - AAD </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div className="modal fade" id="exampleModalp6" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
