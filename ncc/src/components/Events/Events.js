@@ -1225,7 +1225,7 @@ function Events() {
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingBottom: '7px' }}>Firing Practice</p>
                                             <p className="text-center event-des" style={{ padding: '0px 15px' }}>
-                                                Participate in an immersive firing practice session at BEG to improve your precision and control.
+                                                A total of 49 cadets from NCC IITR actively participated in a firing practice session at BEG. Each cadet undertook 5 rounds of Grouping Fire and 5 rounds of Snap Shooting, enhancing their focus, precision, and marksmanship skills through disciplined training
                                             </p>
                                             <p className="event-details">Date &amp; Time - 07-04-2025, 07:00 AM to 01:00 PM</p>
                                             <p className="event-details">Venue - BEG Firing Range</p>
