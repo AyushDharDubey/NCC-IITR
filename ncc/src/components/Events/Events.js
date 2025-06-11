@@ -12,7 +12,7 @@ function Events() {
         {
             src: "./images/events/9April.jpg",
             alt: "Recreational Activity at AAD",
-            dataBsTarget: "#exampleModalp37"
+            dataBsTarget: "#exampleModalp38"
         },
 
         {
@@ -469,7 +469,7 @@ function Events() {
                     </div>
                 </div>
 
-<div className="modal fade" id="exampleModalp37" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id="exampleModalp38" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="modal-body p-0">
@@ -481,7 +481,7 @@ function Events() {
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '20px' }}>Recreational Activity at AAD</p>
                                             <p className="text-center event-des" style={{ paddingTop: '10px' }}>
-                                               Unwind, energize, and connect — Recreational Activities at AAD bring joy to every moment!
+                                              NCC IITR brought a day full of joy, inclusion, and energy to Anushruti Academy for the Deaf. Through 7 engaging games, over 90 students participated with enthusiasm and spirit. The event celebrated not just play, but confidence and connection—ending with 22 bright winners and countless smiles.
                                             </p>
                                             <p className="event-details">Date & Time - 9th April, 9:00 AM - 1:00 PM</p>
                                             <p className="event-details">Venue - AAD </p>
