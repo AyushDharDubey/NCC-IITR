@@ -264,7 +264,7 @@ function Events() {
                                 Free Eye and Health Checkup Camp
                             </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Guest Lecture By Col Anoop Vyas
@@ -1238,7 +1238,7 @@ function Events() {
                     </div>
                 </div>
                 <div className="modal fade" id="exampleModalp36" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '1000px' }}>
                         <div className="modal-content">
                             <div className="modal-body p-0">
                                 <div class="container-fluid p-0">
@@ -1247,7 +1247,7 @@ function Events() {
                                             <img src=".\images\events\eyehealthcamp2.jpg" alt="events" class="d-block" style={{ width: '100%', margin: '0px', padding: '0px', borderRadius: '0px' }} />
                                         </div>
                                         <div class="col-6 modal-event">
-                                            <p class="text-center event-name">Blood Donation Event</p>
+                                            <p class="text-center event-name">Eye Checkup Camp</p>
                                             <p class="text-center event-des" style={{ padding: '0px 15px' }}>Good vision is key to a better life, and regular eye checkups are essential for maintaining healthy eyesight. <br />
 Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-being where experienced doctors will conduct comprehensive eye and health tests, providing expert guidance; absolutely free.
                                                 
