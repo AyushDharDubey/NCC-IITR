@@ -10,6 +10,11 @@ function Events() {
 
     const events = [
         {
+            src: "./images/events/9April.jpg",
+            alt: "Recreational Activity at AAD",
+            dataBsTarget: "#exampleModalp38"
+        },
+        {
             src: "./images/events/eyehealthcamp2.jpg",
             alt: "Eye and health checkup camp",
             dataBsTarget: "#exampleModalp36"
@@ -253,7 +258,7 @@ function Events() {
 
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                             <img src=".\images\events\eyehealthcamp.jpg" alt="free Eye and health checkup camp" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Free Eye and Health Checkup Camp
@@ -265,6 +270,9 @@ function Events() {
                                 Guest Lecture By Col Anoop Vyas
                             </div>
                         </div>
+
+                  
+
                         <div class="carousel-item">
                             <img src="./images/events/26jan2025-rec.jpg" alt="26 Jan 2025" class="d-block" onclick="changeCarouselInterval()" />
                             <div class="block">
@@ -380,6 +388,34 @@ function Events() {
                         </div>
                     </div>
                 </div>
+
+<div class="modal fade" id="exampleModalp38" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div class="container-fluid p-0">
+                                    <div class="row d-flex modal-box m-0">
+                                        <div class="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/9April.jpg" alt="events" style={{ width: '100%' }} class="imga" />
+                                        </div>
+                                        <div class="col-6 modal-event">
+                                            <p class="text-center event-name" style={{ paddingTop: '20px' }}>Recreational Activity at AAD</p>
+                                            <p class="text-center event-des" style={{ paddingTop: '20px', fontSize: '15px' }}>
+                                                NCC IITR brought a day full of joy, inclusion, and energy to Anushruti Academy for the Deaf.
+                                                 Through 7 engaging games, over 90 students participated with enthusiasm and spirit. The event celebrated not just play, but confidence and connection—ending with 22 bright winners and countless smiles.
+                                            </p>
+                                            <p class="event-details" style={{ paddingTop: '1px', fontSize: '15px' }}>Date & Time -
+                                                9th April, 9:00 AM - 1:00 PM </p>
+                                            <p class="event-details" style={{ fontSize: '15px' }}>Venue - AAD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="modal fade" id="exampleModalp3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
