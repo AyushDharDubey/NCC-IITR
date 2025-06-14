@@ -11,7 +11,7 @@ function Events() {
     const events = [
         {
             src: "./images/events/9thApr.jpg",
-            alt: "Eye and health checkup camp",
+            alt: "Recreational Activity At AAD",
             dataBsTarget: "#exampleModalp38"
         },
         {
@@ -444,30 +444,6 @@ function Events() {
                         </div>
                     </div>
                 </div>
-
-                <div className="modal fade" id="exampleModalp38" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-body p-0">
-                                <div className="container-fluid p-0">
-                                    <div className="row d-flex modal-box m-0">
-                                        <div className="col-6 px-0 align-self-center img-container">
-                                            <img src="./images/events/9apr.jpg" alt="events" style={{ width: '100%' }} className="imga" />
-                                        </div>
-                                        <div className="col-6 modal-event">
-                                            <p className="text-center event-name" style={{ paddingTop: '20px' }}>Recreational Activity At AAD</p>
-                                            <p className="text-center event-des" style={{ paddingTop: '10px' }}>
-                                                NCC IITR brought a day full of joy, inclusion, and energy to Anushruti Academy for the Deaf. Through 7 engaging games, over 90 students participated with enthusiasm and spirit. The event celebrated not just play, but confidence and connection—ending with 22 bright winners and countless smiles.</p>
-                                            <p className="event-details" style={{ paddingTop: '10px', fontSize: '15px' }}>Date & Time - 9Th April 2025, 9:00 AM - 1:00 PM</p>
-                                            <p className="event-details" style={{ fontSize: '15px' }}>Venue - AAD</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="modal fade" id="exampleModalp5" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
@@ -1254,6 +1230,30 @@ Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-bei
                                                                               </p>
                                             <p class="event-details">Date &amp; Time - 26-02-2025, 09:00 AM</p>
                                             <p class="event-details">Venue - Students Activity Center, IIT Roorkee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="modal fade" id="exampleModalp38" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-body p-0">
+                                <div className="container-fluid p-0">
+                                    <div className="row d-flex modal-box m-0">
+                                        <div className="col-6 px-0 align-self-center img-container">
+                                            <img src="./images/events/9apr.jpg" alt="events" style={{ width: '100%' }} className="imga" />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingTop: '20px' }}>Recreational Activity At AAD</p>
+                                            <p className="text-center event-des" style={{ paddingTop: '10px' }}>
+                                                NCC IITR brought a day full of joy, inclusion, and energy to Anushruti Academy for the Deaf. Through 7 engaging games, over 90 students participated with enthusiasm and spirit. The event celebrated not just play, but confidence and connection—ending with 22 bright winners and countless smiles.</p>
+                                            <p className="event-details" style={{ paddingTop: '10px', fontSize: '15px' }}>Date & Time - 9th April 2025, 9:00 AM - 1:00 PM</p>
+                                            <p className="event-details" style={{ fontSize: '15px' }}>Venue - AAD</p>
                                         </div>
                                     </div>
                                 </div>
