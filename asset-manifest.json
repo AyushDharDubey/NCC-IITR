@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NCC-IITR/static/css/main.4d012e79.css",
+    "main.js": "/NCC-IITR/static/js/main.87dbc339.js",
+    "static/js/453.37ae0f96.chunk.js": "/NCC-IITR/static/js/453.37ae0f96.chunk.js",
+    "index.html": "/NCC-IITR/index.html",
+    "main.4d012e79.css.map": "/NCC-IITR/static/css/main.4d012e79.css.map",
+    "main.87dbc339.js.map": "/NCC-IITR/static/js/main.87dbc339.js.map",
+    "453.37ae0f96.chunk.js.map": "/NCC-IITR/static/js/453.37ae0f96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d012e79.css",
+    "static/js/main.87dbc339.js"
+  ]
+}
