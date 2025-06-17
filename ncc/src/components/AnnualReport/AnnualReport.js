@@ -10,6 +10,7 @@ function AnnualReport() {
     const carouselContainerRef = useRef(null);
 
     const reports = [
+        { link: "./files/Annual report NCC 2023-24.pdf", imgSrc: "./images/annualreport/annlrp2024.png", altText: "annual report 23-24" },
         { link: "./files/Annual report NCC 2022-23.pdf", imgSrc: "./images/annualreport/annlrp2023.png", altText: "annual report 22-23" },
         { link: "./files/Annual Report 2021-22.pdf", imgSrc: "./images/annualreport/annlrp2022.png", altText: "annual report 21-22" },
         { link: "./files/2020-21.pdf", imgSrc: "./images/annualreport/annlrp2021.jpg", altText: "annual report 20-21" },
@@ -73,8 +74,8 @@ function AnnualReport() {
             <div className="reports">
                 <div className='curr-year'>
                     <div className="Report-box">
-                        <a href="./files/Annual Report NCC 2023-24.pdf" target="_blank" download>
-                            <img src="./images/annualreport/annlrp2024.png" alt="annual report 23-24" />
+                        <a href="./files/Annual Report 2024-25.pdf" target="_blank" download>
+                            <img src="./images/annualreport/annlrp2025.png" alt="annual report 24-25" />
                         </a>
                     </div>
                 </div>
