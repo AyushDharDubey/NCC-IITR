@@ -150,6 +150,32 @@ const Team = () => {
 
   const alumniData = [
     {
+      year: "2024-2025",
+      members: [
+        { name: "AMAN KUMAR", designation: "General Secretary" },
+        { name: "ARYAN MISHRA", designation: "Deputy General Secretary" },
+        { name: "KANWAR ANMOL SINGH", designation: "Deputy General Secretary, Unit" },
+        { name: "ANKIT LAL", designation: "Joint Secretary, Operations" },
+        { name: "ATHARV NANDKUMAR", designation: "Joint Secretary, Operations" },
+        { name: "KAJAL KATARIA", designation: "Joint Secretary, Operations" },
+        { name: "HANSHIKA SONI", designation: "Joint Secretary, Events" },
+        { name: "PRATIK", designation: "Joint Secretary, Events" },
+        { name: "TAPISH VIKRAM", designation: "Joint Secretary, Events" },
+        { name: "ISHA", designation: "Joint Secretary, Unit" },
+        { name: "NEETU", designation: "Joint Secretary, Unit" },
+        { name: "PRATHAMVEER SINGH", designation: "Joint Secretary, Unit" },
+        { name: "TADANGI DRAKSHAYANI", designation: "Joint Secretary, Unit" },
+        { name: "ABHIUDIT SHARMA", designation: "Joint Secretary, Design" },
+        { name: "MANISH RANJAN", designation: "Joint Secretary, Design" },
+        { name: "DEWANSH UPADHYAY", designation: "Joint Secretary, Web-D" },
+        { name: "DIVYA RAJ", designation: "Joint Secretary, Web-D" },
+
+        { name: "DHEERAJ KUMAR MOURYA", designation: "Joint Secretary, Multimedia"},
+        { name: "YASH GEHLOT", designation: "Joint Secretary, Multimedia" },
+        { name: "ARYAN RAJ", designation: "Joint Secretary, Editorial"},
+        { name: "BHAVYA BHARGAV", designation: "Joint Secretary, Editorial" }
+      ]
+    },{
       year: "2023-2024",
       members: [
         { name: "HARDIK SAHNI", designation: "General Secretary" },
@@ -331,7 +357,39 @@ const Team = () => {
                       ))}
                     </div>
                     <div className="section-1 d-flex justify-content-evenly">
-                      {team.members.slice(9).map((member) => (
+                      {team.members.slice(9,12).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                     <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(12,15).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                     <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(15,18).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                       <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(18,21).map((member) => (
+                        <div className="item" key={member.name}>
+                          <p className="name"><b>{member.name}</b></p>
+                          <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
+                        </div>
+                      ))}
+                    </div>
+                     <div className="section-1 d-flex justify-content-evenly">
+                      {team.members.slice(21).map((member) => (
                         <div className="item" key={member.name}>
                           <p className="name"><b>{member.name}</b></p>
                           <span className="designation"><i className="fa fa-user-tie"></i> {member.designation}</span>
