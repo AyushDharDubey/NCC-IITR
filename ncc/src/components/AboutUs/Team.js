@@ -13,13 +13,13 @@ const Team = () => {
       },
       {
         name: 'NITESH KUMAR',
-        designation: 'Deputy General Secretary',
+        designation: 'Deputy General Secretary(Overall)',
         email: 'nitesh_k@ece.iitr.ac.in',
         phone: '+91-6299930337',
       },
       {
         name: 'TEJAL GODARA',
-        designation: 'Deputy General Secretary',
+        designation: 'Deputy General Secretary(Unit)',
         email: 'tejal_g@ce.iitr.ac.in',
         phone: '+91-9828483211',
       },
