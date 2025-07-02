@@ -276,18 +276,6 @@ function Events() {
                                 Guard Of Honour<br />Republic Day 2025
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/26jan2025-rec2.jpg" alt="GoH 26 Jan 2025" class="d-block" onclick="changeCarouselInterval()" />
-                            <div class="block">
-                                Guard Of Honour<br /> Republic Day 2025
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/events/bdc-2024-rec.jpg" alt="BDC 2024" class="d-block" onclick="changeCarouselInterval()" />
-                            <div className='block'>
-                                Blood Donation Camp 2024
-                            </div>
-                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#recentEventsCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
