@@ -265,6 +265,12 @@ function Events() {
                             </div>
                         </div>
                         <div class="carousel-item">
+                            <img src="./images/events/Firing-Practice'25.jpeg" alt="Firing Practice 2025 at BEG range" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Firing Practice 2025 at BEG range
+                            </div>
+                        </div>
+                        <div class="carousel-item">
                             <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Guest Lecture By Col Anoop Vyas
