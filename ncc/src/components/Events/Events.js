@@ -22,6 +22,11 @@ function Events() {
         },
 
         {
+            src: "./images/events/Firing'25.jpeg",
+            alt: "Firing Practice",
+            dataBsTarget: "#exampleModalp39"
+        },
+        {
             src: "./images/events/eyehealthcamp2.jpg",
             alt: "Eye and health checkup camp",
             dataBsTarget: "#exampleModalp36"
@@ -1220,9 +1225,7 @@ function Events() {
                                         <div class="col-6 modal-event">
                                             <p class="text-center event-name">Eye Checkup Camp</p>
                                             <p class="text-center event-des" style={{ padding: '0px 15px' }}>Good vision is key to a better life, and regular eye checkups are essential for maintaining healthy eyesight. <br />
-Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-being where experienced doctors will conduct comprehensive eye and health tests, providing expert guidance; absolutely free.
-                                                
-                                                                              </p>
+                                            Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-being where experienced doctors will conduct comprehensive eye and health tests, providing expert guidance; absolutely free.</p>
                                             <p class="event-details">Date &amp; Time - 26-02-2025, 09:00 AM</p>
                                             <p class="event-details">Venue - Students Activity Center, IIT Roorkee</p>
                                         </div>
@@ -1232,10 +1235,6 @@ Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-bei
                         </div>
                     </div>
                 </div>
-
-                
-
-
                 <div className="modal fade" id="exampleModalp38" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
@@ -1265,6 +1264,7 @@ Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-bei
                                 <div className="container-fluid p-0">
                                     <div className="row d-flex modal-box m-0">
                                         <div className="col-6 px-0 align-self-center img-container">
+
                                             <img src="./images/events/Firing-Competition2.jpg" alt="events" style={{ width: '100%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
@@ -1272,6 +1272,15 @@ Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-bei
                                             <p className="text-center event-des" style={{ paddingTop: '10px' }}>
                                                 A total of 49 cadets from NCC IIT Roorkee actively participated in a firing practice session at the Bengal Engineer Group (BEG), Roorkee. </p>
                                             <p className="event-details" style={{ paddingTop: '10px', fontSize: '15px' }}>Date & Time - 7th April 2025, 2:00 PM</p>
+=======
+                                            <img src="./images/events/Firing-Competition.jpg" alt="events" style={{ width: '105%' }} className="imga" />
+                                        </div>
+                                        <div className="col-6 modal-event">
+                                            <p className="text-center event-name" style={{ paddingTop: '10px' }}>Firing Competition</p>
+                                            <p className="text-center event-des" style={{ paddingTop: '10px' }}>
+                                               A total of 49 NCC IIT Roorkee cadets participated in a firing practice session at the Bengal Engineer Group (BEG), Roorkee.
+Each cadet completed 5 rounds of Grouping Fire and 5 rounds of Snap Shooting, improving precision, control, and target response. The session offered valuable hands-on experience in a military setting. </p>
+                                            <p className="event-details" style={{ paddingTop: '2px', fontSize: '15px' }}>Date & Time - 7th April 2025, 2:00 PM</p>
                                             <p className="event-details" style={{ fontSize: '15px' }}>Venue - BEG Firing Range </p>
                                         </div>
                                     </div>
