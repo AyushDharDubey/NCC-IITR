@@ -16,7 +16,7 @@ function Events() {
         },
 
         {
-            src: "./images/events/Firing-Competition1.jpg",
+            src: "./images/events/Firing'25.jpeg",
             alt: "Firing Practice",
             dataBsTarget: "#exampleModalp39"
         },
