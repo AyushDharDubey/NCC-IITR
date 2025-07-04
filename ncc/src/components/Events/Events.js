@@ -1260,7 +1260,7 @@ function Events() {
                                             <img src="./images/events/Firing-Competition.jpg" alt="events" style={{ width: '105%' }} className="imga" />
                                         </div>
                                         <div className="col-6 modal-event">
-                                            <p className="text-center event-name" style={{ paddingTop: '10px' }}>Firing Competition</p>
+                                            <p className="text-center event-name" style={{ paddingTop: '10px' }}>Firing Practice</p>
                                             <p className="text-center event-des" style={{ paddingTop: '10px' }}>
                                                A total of 49 NCC IIT Roorkee cadets participated in a firing practice session at the Bengal Engineer Group (BEG), Roorkee.Each cadet completed 5 rounds of Grouping Fire and 5 rounds of Snap Shooting, improving precision, control, and target response. The session offered valuable hands-on experience in a military setting. </p>
                                             <p className="event-details" style={{ paddingTop: '2px', fontSize: '15px' }}>Date & Time - 7th April 2025, 2:00 PM</p>
