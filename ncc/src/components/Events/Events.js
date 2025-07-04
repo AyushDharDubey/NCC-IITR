@@ -14,13 +14,11 @@ function Events() {
             alt: "Recreational Activity At AAD",
             dataBsTarget: "#exampleModalp38"
         },
-
         {
             src: "./images/events/Firing'25.jpeg",
             alt: "Firing Practice",
             dataBsTarget: "#exampleModalp39"
         },
-
         {
             src: "./images/events/Firing'25.jpeg",
             alt: "Firing Practice",
