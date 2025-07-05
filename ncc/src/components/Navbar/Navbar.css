@@ -183,20 +183,6 @@ a#logo4:hover>img {
     width: fit-content;
 }
 
-#contact_content,
-#address_content,
-#website_content {
-    height: 0px;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-.contact_content_0,
-.address_content_0,
-.website_content_0 {
-    height: 114px !important;
-}
-
 #footer_heading>h2 {
     font-weight: 700 !important;
     font-size: 1.8em;
