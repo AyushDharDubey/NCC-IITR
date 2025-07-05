@@ -43,10 +43,13 @@ function Footer() {
               <img src="./images/svgs/phoneIcon.svg" />
               <div className="px-2">
                 <p id="content" className="m-0 pb-1">
-                  +91 7464887593
+                  +91 9798999936
                 </p>
                 <p id="content" className="pb-1 m-0">
-                  +91 7673063605
+                  +91 6299930337
+                </p>
+                <p id="content" className="pb-1 m-0">
+                  +91 9828483211
                 </p>
               </div>
             </div>

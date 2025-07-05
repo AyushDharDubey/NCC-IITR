@@ -17,7 +17,7 @@ function Events() {
         {
             src: "./images/events/Firing'25.jpeg",
             alt: "Firing Practice",
-            dataBsTarget: "#exampleModalp39"
+            dataBsTarget: "#exampleModalp37"
         },
         {
             src: "./images/events/eyehealthcamp2.jpg",
@@ -266,7 +266,7 @@ function Events() {
                         <div class="carousel-item active">
                             <img src="./images/events/Firing-Practice'25.jpeg" alt="Firing Practice 2025 at BEG range" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
-                                Firing Practice 2025 at BEG range
+                                Firing Practice 2025 at BEG Range
                             </div>
                         </div>
 
@@ -1227,8 +1227,8 @@ function Events() {
                                             <p class="text-center event-name">Eye Checkup Camp</p>
                                             <p class="text-center event-des" style={{ padding: '0px 15px' }}>Good vision is key to a better life, and regular eye checkups are essential for maintaining healthy eyesight. <br />
                                             Join NCC IIT Roorkee at Free Eye and Health Checkup Camp to ensure your well-being where experienced doctors will conduct comprehensive eye and health tests, providing expert guidance; absolutely free.</p>
-                                            <p class="event-details">Date &amp; Time - 26-02-2025, 09:00 AM</p>
-                                            <p class="event-details">Venue - Students Activity Center, IIT Roorkee</p>
+                                            <p class="event-details" style={{ paddingTop: '10px', fontSize: '15px' }}>Date &amp; Time - 26-02-2025, 09:00 AM</p>
+                                            <p class="event-details" style={{ fontSize: '15px' }}>Venue - Students Activity Center, IIT Roorkee</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1270,7 +1270,7 @@ function Events() {
                                         <div className="col-6 modal-event">
                                             <p className="text-center event-name" style={{ paddingTop: '10px' }}>Firing Practice</p>
                                             <p className="text-center event-des" style={{ paddingTop: '10px' }}>
-                                               A total of 49 NCC IIT Roorkee cadets participated in a firing practice session at the Bengal Engineer Group (BEG), Roorkee.Each cadet completed 5 rounds of Grouping Fire and 5 rounds of Snap Shooting, improving precision, control, and target response. The session offered valuable hands-on experience in a military setting. </p>
+                                               A total of 49 NCC IIT Roorkee cadets participated in a firing practice session at the Bengal Engineer Group (BEG), Roorkee. Each cadet completed 5 rounds of Grouping Fire and 5 rounds of Snap Shooting, improving precision, control, and target response. The session offered valuable hands-on experience in a military setting. </p>
                                             <p className="event-details" style={{ paddingTop: '2px', fontSize: '15px' }}>Date & Time - 7th April 2025, 2:00 PM</p>
                                             <p className="event-details" style={{ fontSize: '15px' }}>Venue - BEG Firing Range </p>
                                         </div>
