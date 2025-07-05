@@ -258,18 +258,20 @@ function Events() {
 
                 <div id="recentEventsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark" data-bs-touch="true">
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
-                            <img src=".\images\events\eyehealthcamp.jpg" alt="free Eye and health checkup camp" class="d-block" onclick="changeCarouselInterval()" />
-                            <div className='block'>
-                                Free Eye and Health Checkup Camp
-                            </div>
-                        </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <img src="./images/events/Firing-Practice'25.jpeg" alt="Firing Practice 2025 at BEG range" class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
                                 Firing Practice 2025 at BEG range
                             </div>
                         </div>
+
+                    <div class="carousel-item ">
+                            <img src=".\images\events\eyehealthcamp.jpg" alt="free Eye and health checkup camp" class="d-block" onclick="changeCarouselInterval()" />
+                            <div className='block'>
+                                Free Eye and Health Checkup Camp
+                            </div>
+                        </div>
+                        
                         <div class="carousel-item">
                             <img src="./images/events/guest-lec-col-anoop-rec.jpg" alt="Guest Lecture By Col Anoop Vyas " class="d-block" onclick="changeCarouselInterval()" />
                             <div className='block'>
