@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState('ADMINISTRATION');
-  const [activeTabPastTeam, setActiveTabPastTeam] = useState("2023-2024");
+  const [activeTabPastTeam, setActiveTabPastTeam] = useState("2024-2025");
   const teamData = {
     ADMINISTRATION: [
       {
